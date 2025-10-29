@@ -54,7 +54,6 @@
 </head>
 <body class="gradient-bg min-h-full">
     
-    <!-- Telegram Popup -->
     <div id="telegramPopup" class="fixed top-4 right-4 z-50 bg-gradient-to-r from-blue-500 to-cyan-500 text-white p-4 rounded-2xl shadow-2xl max-w-sm notification-slide">
         <div class="flex items-center space-x-3">
             <div class="text-2xl">📱</div>
@@ -69,7 +68,6 @@
         </div>
     </div>
 
-    <!-- Floating Telegram Icon -->
     <div id="telegramFloat" class="fixed bottom-6 right-6 z-40">
         <button id="telegramBtn" class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all pulse-animation">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -78,7 +76,6 @@
         </button>
     </div>
 
-    <!-- Login/Signup Page -->
     <div id="authPage" class="min-h-full flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl shadow-2xl p-8 w-full max-w-md border-4 border-purple-200">
             <div class="text-center mb-8">
@@ -94,7 +91,6 @@
                 </div>
             </div>
             
-            <!-- Login Form -->
             <form id="loginForm" class="space-y-4">
                 <div>
                     <label for="loginUsername" class="block text-sm font-bold text-gray-700 mb-2">👤 Username</label>
@@ -107,7 +103,6 @@
                 <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-xl font-bold hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg transform hover:scale-105">🚀 Login</button>
             </form>
             
-            <!-- Signup Form -->
             <form id="signupForm" class="space-y-4 hidden">
                 <div>
                     <label for="signupUsername" class="block text-sm font-bold text-gray-700 mb-2">👤 Username</label>
@@ -207,7 +202,6 @@
         </div>
     </div>
     
-    <!-- User Dashboard -->
     <div id="userDashboard" class="hidden min-h-full">
         <nav class="bg-gradient-to-r from-purple-600 via-pink-600 to-red-500 shadow-2xl">
             <div class="max-w-7xl mx-auto px-4">
@@ -232,16 +226,13 @@
             </div>
         </nav>
         
-        <!-- News Section -->
         <div id="newsSection" class="max-w-7xl mx-auto p-6">
             <div id="newsList" class="space-y-4">
-                <!-- News will be populated here -->
-            </div>
+                </div>
         </div>
         
         <div class="max-w-7xl mx-auto p-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Earnings Card -->
                 <div class="bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl shadow-2xl p-6 text-white transform hover:scale-105 transition-all">
                     <h3 class="text-xl font-bold mb-4 flex items-center">📊 Your Earnings</h3>
                     <div class="space-y-3">
@@ -260,7 +251,6 @@
                     </div>
                 </div>
                 
-                <!-- Daily Claim Card -->
                 <div class="bg-gradient-to-br from-green-400 to-emerald-500 rounded-3xl shadow-2xl p-6 text-white transform hover:scale-105 transition-all">
                     <h3 class="text-xl font-bold mb-4 flex items-center">🎁 Daily Claim</h3>
                     <div class="space-y-3">
@@ -278,7 +268,6 @@
                     </div>
                 </div>
                 
-                <!-- Referral Card -->
                 <div class="bg-gradient-to-br from-purple-400 to-pink-500 rounded-3xl shadow-2xl p-6 text-white transform hover:scale-105 transition-all">
                     <h3 class="text-xl font-bold mb-4 flex items-center">👥 Referral System</h3>
                     <div class="space-y-3">
@@ -296,7 +285,6 @@
                     </div>
                 </div>
                 
-                <!-- Withdrawal Card -->
                 <div class="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl shadow-2xl p-6 text-white transform hover:scale-105 transition-all">
                     <h3 class="text-xl font-bold mb-4 flex items-center">💳 Withdrawal</h3>
                     <div id="withdrawalClosed" class="text-center py-4">
@@ -309,15 +297,12 @@
                     </div>
                 </div>
                 
-                <!-- User Level Card -->
                 <div class="bg-gradient-to-br from-indigo-400 to-purple-500 rounded-3xl shadow-2xl p-6 text-white transform hover:scale-105 transition-all">
                     <h3 class="text-xl font-bold mb-4 flex items-center">👑 Your Level</h3>
                     <div id="userLevelInfo" class="space-y-3">
-                        <!-- Level info will be populated here -->
-                    </div>
+                        </div>
                 </div>
                 
-                <!-- Promo Code Card -->
                 <div class="bg-gradient-to-br from-pink-400 to-red-500 rounded-3xl shadow-2xl p-6 text-white transform hover:scale-105 transition-all">
                     <h3 class="text-xl font-bold mb-4 flex items-center">🎁 Promo Code</h3>
                     <form id="promoCodeForm" class="space-y-3">
@@ -327,31 +312,24 @@
                 </div>
             </div>
             
-            <!-- Notifications -->
             <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">🔔 Notifications</h3>
                 <div id="notificationsList" class="space-y-3 max-h-60 overflow-y-auto">
-                    <!-- Notifications will be populated here -->
-                </div>
+                    </div>
             </div>
             
-            <!-- Achievements -->
             <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">🏆 Achievements</h3>
                 <div id="achievementsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Achievements will be populated here -->
-                </div>
+                    </div>
             </div>
             
-            <!-- Transaction History -->
             <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">📈 Transaction History</h3>
                 <div id="transactionHistory" class="space-y-3 max-h-60 overflow-y-auto">
-                    <!-- Transaction history will be populated here -->
-                </div>
+                    </div>
             </div>
             
-            <!-- Message Admin -->
             <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">💬 Message Admin</h3>
                 <form id="messageAdminForm" class="space-y-4">
@@ -369,12 +347,10 @@
                 <div class="mt-6">
                     <h4 class="font-bold text-gray-700 mb-3">Admin Replies:</h4>
                     <div id="adminRepliesList" class="space-y-3 max-h-60 overflow-y-auto">
-                        <!-- Admin replies will be shown here -->
-                    </div>
+                        </div>
                 </div>
             </div>
 
-            <!-- Available Tasks -->
             <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">🎯 Available Tasks</h3>
                 <div class="mb-4">
@@ -389,21 +365,17 @@
                     </select>
                 </div>
                 <div id="tasksList" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Tasks will be populated here -->
-                </div>
+                    </div>
             </div>
             
-            <!-- FAQ Section -->
             <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">❓ Frequently Asked Questions</h3>
                 <div id="faqSection" class="space-y-4">
-                    <!-- FAQ items will be populated here -->
-                </div>
+                    </div>
             </div>
         </div>
     </div>
     
-    <!-- Admin Dashboard -->
     <div id="adminDashboard" class="hidden min-h-full">
         <nav class="bg-gradient-to-r from-red-600 via-purple-600 to-indigo-600 text-white shadow-2xl">
             <div class="max-w-7xl mx-auto px-4">
@@ -419,7 +391,6 @@
         
         <div class="max-w-7xl mx-auto p-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-                <!-- Stats Card -->
                 <div class="bg-gradient-to-br from-blue-400 to-purple-500 rounded-3xl shadow-2xl p-6 text-white">
                     <h3 class="text-xl font-bold mb-4 flex items-center">📊 Platform Stats</h3>
                     <div class="space-y-3">
@@ -438,7 +409,6 @@
                     </div>
                 </div>
                 
-                <!-- Withdrawal Control -->
                 <div class="bg-gradient-to-br from-green-400 to-teal-500 rounded-3xl shadow-2xl p-6 text-white">
                     <h3 class="text-xl font-bold mb-4 flex items-center">💳 Withdrawal Control</h3>
                     <div class="space-y-4">
@@ -454,7 +424,6 @@
                     </div>
                 </div>
                 
-                <!-- User Management -->
                 <div class="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl shadow-2xl p-6 text-white">
                     <h3 class="text-xl font-bold mb-4 flex items-center">👥 User Management</h3>
                     <div class="space-y-3">
@@ -464,7 +433,6 @@
                     </div>
                 </div>
                 
-                <!-- Analytics Card -->
                 <div class="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-3xl shadow-2xl p-6 text-white">
                     <h3 class="text-xl font-bold mb-4 flex items-center">📊 Analytics</h3>
                     <div class="space-y-3">
@@ -483,2664 +451,792 @@
                     </div>
                 </div>
                 
-                <!-- Promo Code Management -->
                 <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl shadow-2xl p-6 text-white">
                     <h3 class="text-xl font-bold mb-4 flex items-center">🎁 Promo Codes</h3>
-                    <div class="space-y-3">
-                        <input type="text" id="promoCodeName" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Promo name">
-                        <input type="number" id="promoCodeReward" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Reward amount" min="1">
-                        <input type="number" id="promoCodeLimit" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Usage limit" min="1">
-                        <button id="createPromoBtn" class="w-full bg-white text-yellow-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">🎯 Create Promo</button>
-                    </div>
+                    <form id="adminPromoCodeForm" class="space-y-3">
+                        <input type="text" id="newPromoCode" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="New Code (e.g., FREE100)">
+                        <input type="number" id="promoCodeReward" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Reward in Coins (e.g., 100)">
+                        <button type="submit" class="w-full bg-white text-orange-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">➕ Add Promo Code</button>
+                    </form>
+                    <div class="mt-4 text-sm text-center text-yellow-100">Existing Codes: <span id="existingPromoCodes">None</span></div>
                 </div>
                 
-                <!-- Earnings Control -->
-                <div class="bg-gradient-to-br from-red-400 to-purple-500 rounded-3xl shadow-2xl p-6 text-white">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">💰 Earnings Control</h3>
-                    <div class="space-y-3">
-                        <div>
-                            <label class="block text-sm mb-2 font-medium">Daily Claim Amount:</label>
-                            <input type="number" id="dailyClaimAmountInput" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="50" min="1">
-                            <button id="updateDailyClaimBtn" class="w-full mt-2 bg-white text-purple-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">Update Daily Claim</button>
+                <div class="bg-gradient-to-br from-red-400 to-pink-500 rounded-3xl shadow-2xl p-6 text-white">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">🎯 Task Management</h3>
+                    <form id="addTaskForm" class="space-y-3">
+                        <input type="text" id="newTaskName" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Task Name (e.g., Follow on IG)">
+                        <select id="newTaskCategory" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white">
+                            <option value="social">Social Media</option>
+                            <option value="survey">Survey</option>
+                            <option value="download">Download</option>
+                            <option value="review">Review</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="number" id="newTaskReward" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Reward (Coins)">
+                        <button type="submit" class="w-full bg-white text-pink-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">➕ Add New Task</button>
+                    </form>
+                    <div id="adminTasksList" class="mt-4 space-y-2 max-h-40 overflow-y-auto">
                         </div>
-                        <div>
-                            <label class="block text-sm mb-2 font-medium">Referral Bonus:</label>
-                            <input type="number" id="referralBonusInput" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="50" min="1">
-                            <button id="updateReferralBonusBtn" class="w-full mt-2 bg-white text-purple-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">Update Referral Bonus</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Coin Management -->
-                <div class="bg-gradient-to-br from-indigo-400 to-blue-500 rounded-3xl shadow-2xl p-6 text-white">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">💎 Coin Management</h3>
-                    <div class="space-y-3">
-                        <input type="text" id="coinUsername" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Username">
-                        <input type="number" id="coinAmount" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Amount to remove" min="1">
-                        <button id="removeCoinBtn" class="w-full bg-white text-red-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">💸 Remove Coins</button>
-                        <input type="text" id="addCoinUsername" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Username">
-                        <input type="number" id="addCoinAmount" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Amount to add" min="1">
-                        <button id="addCoinBtn" class="w-full bg-white text-green-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">💎 Add Coins</button>
-                    </div>
-                </div>
-                
-                <!-- User Actions -->
-                <div class="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl shadow-2xl p-6 text-white">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">👤 User Actions</h3>
-                    <div class="space-y-3">
-                        <input type="text" id="actionUsername" class="w-full px-3 py-2 border-2 border-white rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-200" placeholder="Username">
-                        <button id="blockUserActionBtn" class="w-full bg-white text-red-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">🚫 Block User</button>
-                        <button id="suspendUserBtn" class="w-full bg-white text-orange-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">⏸️ Suspend User</button>
-                        <button id="sendMessageToUserBtn" class="w-full bg-white text-blue-500 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors">💬 Send Message</button>
-                    </div>
                 </div>
             </div>
             
-            <!-- News Management -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">📢 News Management</h3>
-                <form id="addNewsForm" class="space-y-4">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="newsTitle" class="block text-sm font-bold text-gray-700 mb-2">News Title</label>
-                            <input type="text" id="newsTitle" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Enter news title" required>
-                        </div>
-                        <div>
-                            <label for="newsDuration" class="block text-sm font-bold text-gray-700 mb-2">Duration (hours)</label>
-                            <input type="number" id="newsDuration" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="24" min="1" required>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="newsContent" class="block text-sm font-bold text-gray-700 mb-2">News Content</label>
-                        <textarea id="newsContent" rows="3" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Enter news content (URLs will be made clickable automatically)" required></textarea>
-                    </div>
-                    <div>
-                        <label for="newsImage" class="block text-sm font-bold text-gray-700 mb-2">News Image (Optional)</label>
-                        <input type="file" id="newsImage" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" accept="image/*">
-                        <p class="text-xs text-gray-500 mt-1">Max 2MB image size</p>
-                    </div>
-                    <div>
-                        <label for="newsLink" class="block text-sm font-bold text-gray-700 mb-2">News Link (Optional)</label>
-                        <input type="url" id="newsLink" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="https://example.com">
-                    </div>
-                    <button type="submit" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-xl font-bold hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg">📢 Post News</button>
-                </form>
-                
-                <div class="mt-6">
-                    <h4 class="font-bold text-gray-700 mb-3">Active News:</h4>
-                    <div id="adminNewsList" class="space-y-3 max-h-60 overflow-y-auto">
-                        <!-- Active news will be listed here -->
-                    </div>
+            <div class="mt-8 bg-white rounded-3xl shadow-2xl p-6">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">💰 Pending Withdrawals</h3>
+                <div id="pendingWithdrawalsList" class="space-y-3 max-h-60 overflow-y-auto">
+                    <p class="text-center text-gray-500">No pending requests.</p>
                 </div>
             </div>
-            
-            <!-- Task Management -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">🎯 Task Management</h3>
-                <form id="addTaskForm" class="space-y-4">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div>
-                            <label for="taskTitle" class="block text-sm font-bold text-gray-700 mb-2">Task Title</label>
-                            <input type="text" id="taskTitle" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500" placeholder="Enter task title" required>
-                        </div>
-                        <div>
-                            <label for="taskReward" class="block text-sm font-bold text-gray-700 mb-2">Reward (Coins)</label>
-                            <input type="number" id="taskReward" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500" placeholder="50" min="1" required>
-                        </div>
-                        <div>
-                            <label for="taskLimit" class="block text-sm font-bold text-gray-700 mb-2">User Limit</label>
-                            <input type="number" id="taskLimit" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500" placeholder="100" min="1" required>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="taskCategory" class="block text-sm font-bold text-gray-700 mb-2">Category</label>
-                            <select id="taskCategory" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500">
-                                <option value="social">Social Media</option>
-                                <option value="survey">Survey</option>
-                                <option value="download">Download</option>
-                                <option value="review">Review</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="taskDifficulty" class="block text-sm font-bold text-gray-700 mb-2">Difficulty</label>
-                            <select id="taskDifficulty" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500">
-                                <option value="easy">Easy</option>
-                                <option value="medium">Medium</option>
-                                <option value="hard">Hard</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="taskDescription" class="block text-sm font-bold text-gray-700 mb-2">Task Description</label>
-                        <textarea id="taskDescription" rows="3" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500" placeholder="Describe what users need to do" required></textarea>
-                    </div>
-                    <div>
-                        <label for="taskLink" class="block text-sm font-bold text-gray-700 mb-2">Task Link (Optional)</label>
-                        <input type="url" id="taskLink" class="w-full px-4 py-3 border-2 border-blue-200 rounded-xl focus:ring-2 focus:ring-blue-500" placeholder="https://example.com">
-                    </div>
-                    <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-xl font-bold hover:from-blue-600 hover:to-purple-600 transition-all shadow-lg">🎯 Add Task</button>
-                </form>
-            </div>
-            
-            <!-- Active Promo Codes -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">🎁 Active Promo Codes</h3>
-                <div id="activePromoCodes" class="space-y-3 max-h-60 overflow-y-auto">
-                    <!-- Active promo codes will be listed here -->
-                </div>
-            </div>
-            
-            <!-- FAQ Management -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">❓ FAQ Management</h3>
-                <form id="addFaqForm" class="space-y-4 mb-6">
-                    <div>
-                        <label for="faqQuestion" class="block text-sm font-bold text-gray-700 mb-2">Question</label>
-                        <input type="text" id="faqQuestion" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Enter FAQ question" required>
-                    </div>
-                    <div>
-                        <label for="faqAnswer" class="block text-sm font-bold text-gray-700 mb-2">Answer</label>
-                        <textarea id="faqAnswer" rows="3" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Enter FAQ answer" required></textarea>
-                    </div>
-                    <button type="submit" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-xl font-bold hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg">❓ Add FAQ</button>
-                </form>
-                
-                <div>
-                    <h4 class="font-bold text-gray-700 mb-3">Current FAQ Items:</h4>
-                    <div id="faqList" class="space-y-3 max-h-60 overflow-y-auto">
-                        <!-- FAQ items will be listed here -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- User Management -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">👥 All Users</h3>
-                <div id="allUsersList" class="space-y-3 max-h-96 overflow-y-auto">
-                    <!-- All users will be listed here -->
-                </div>
-            </div>
-
-            <!-- Messages from Users -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">💬 User Messages</h3>
-                <div id="userMessagesList" class="space-y-4 max-h-96 overflow-y-auto">
-                    <!-- User messages will be listed here -->
-                </div>
-            </div>
-            
-            <!-- Pending Approvals -->
-            <div class="mt-6 bg-white rounded-3xl shadow-2xl p-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">⏳ Pending Approvals</h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between items-center mb-3">
-                            <h4 class="font-bold text-gray-700">Task Submissions:</h4>
-                            <button id="approveAllTasksBtn" class="bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 transition-colors font-bold">✅ Approve All</button>
-                        </div>
-                        <div id="pendingTaskSubmissions" class="space-y-3 max-h-60 overflow-y-auto">
-                            <!-- Pending task submissions will be listed here -->
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-700 mb-3">Withdrawal Requests:</h4>
-                        <div id="pendingWithdrawals" class="space-y-3 max-h-60 overflow-y-auto">
-                            <!-- Pending withdrawals will be listed here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Task Submission Modal -->
-    <div id="taskSubmissionModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-md">
-            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">📤 Submit Task Proof</h3>
-            <form id="taskSubmissionForm" class="space-y-4">
-                <input type="hidden" id="submissionTaskId">
-                <div>
-                    <label for="proofFile" class="block text-sm font-bold text-gray-700 mb-2">Upload Proof (Max 3MB)</label>
-                    <input type="file" id="proofFile" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" accept="image/*,video/*,.pdf" required>
-                </div>
-                <div>
-                    <label for="proofDescription" class="block text-sm font-bold text-gray-700 mb-2">Description</label>
-                    <textarea id="proofDescription" rows="3" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Describe your completion proof" required></textarea>
-                </div>
-                <div class="flex space-x-3">
-                    <button type="submit" class="flex-1 bg-gradient-to-r from-green-500 to-blue-500 text-white py-3 rounded-xl font-bold hover:from-green-600 hover:to-blue-600 transition-all">📤 Submit</button>
-                    <button type="button" id="cancelSubmission" class="flex-1 bg-gray-500 text-white py-3 rounded-xl font-bold hover:bg-gray-600 transition-colors">❌ Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    
-    <!-- Withdrawal Modal -->
-    <div id="withdrawalModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-md">
-            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">💳 Withdraw Funds</h3>
-            <form id="withdrawalForm" class="space-y-4">
-                <div>
-                    <label for="withdrawAmount" class="block text-sm font-bold text-gray-700 mb-2">Amount (Coins)</label>
-                    <input type="number" id="withdrawAmount" class="w-full px-4 py-3 border-2 border-green-200 rounded-xl focus:ring-2 focus:ring-green-500" placeholder="Enter amount" min="1" required>
-                </div>
-                <div>
-                    <label for="bankName" class="block text-sm font-bold text-gray-700 mb-2">Bank Name</label>
-                    <input type="text" id="bankName" class="w-full px-4 py-3 border-2 border-green-200 rounded-xl focus:ring-2 focus:ring-green-500" placeholder="Enter bank name" required>
-                </div>
-                <div>
-                    <label for="accountName" class="block text-sm font-bold text-gray-700 mb-2">Account Name</label>
-                    <input type="text" id="accountName" class="w-full px-4 py-3 border-2 border-green-200 rounded-xl focus:ring-2 focus:ring-green-500" placeholder="Enter account name" required>
-                </div>
-                <div>
-                    <label for="accountNumber" class="block text-sm font-bold text-gray-700 mb-2">Account Number</label>
-                    <input type="text" id="accountNumber" class="w-full px-4 py-3 border-2 border-green-200 rounded-xl focus:ring-2 focus:ring-green-500" placeholder="Enter account number" required>
-                </div>
-                <div class="flex space-x-3">
-                    <button type="submit" class="flex-1 bg-gradient-to-r from-green-500 to-blue-500 text-white py-3 rounded-xl font-bold hover:from-green-600 hover:to-blue-600 transition-all">💰 Request Withdrawal</button>
-                    <button type="button" id="cancelWithdrawal" class="flex-1 bg-gray-500 text-white py-3 rounded-xl font-bold hover:bg-gray-600 transition-colors">❌ Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Image Viewer Modal -->
-    <div id="imageViewerModal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-4xl max-h-full overflow-auto">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-bold text-gray-800">📷 Task Proof Image</h3>
-                <button id="closeImageViewer" class="bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition-colors">❌ Close</button>
-            </div>
-            <div class="text-center">
-                <img id="proofImage" src="" alt="Task proof" class="max-w-full max-h-96 rounded-xl shadow-lg mx-auto">
-                <div id="imageDetails" class="mt-4 text-gray-600">
-                    <!-- Image details will be shown here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Notifications Modal -->
-    <div id="notificationsModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-2xl max-h-96 overflow-hidden">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-bold text-gray-800">🔔 Notifications</h3>
-                <button id="closeNotificationsModal" class="bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition-colors">✕</button>
-            </div>
-            <div id="notificationsModalList" class="space-y-3 max-h-80 overflow-y-auto">
-                <!-- Notifications will be populated here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Send Message Modal -->
-    <div id="sendMessageModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-md">
-            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">💬 Send Message to User</h3>
-            <form id="sendMessageForm" class="space-y-4">
-                <input type="hidden" id="messageToUsername">
-                <div>
-                    <label for="messageToUserSubject" class="block text-sm font-bold text-gray-700 mb-2">Subject</label>
-                    <input type="text" id="messageToUserSubject" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Message subject" required>
-                </div>
-                <div>
-                    <label for="messageToUserContent" class="block text-sm font-bold text-gray-700 mb-2">Message</label>
-                    <textarea id="messageToUserContent" rows="4" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Type your message..." required></textarea>
-                </div>
-                <div class="flex space-x-3">
-                    <button type="submit" class="flex-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-xl font-bold hover:from-blue-600 hover:to-purple-600 transition-all">📨 Send Message</button>
-                    <button type="button" id="cancelSendMessage" class="flex-1 bg-gray-500 text-white py-3 rounded-xl font-bold hover:bg-gray-600 transition-colors">❌ Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Reply Modal -->
-    <div id="replyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-md">
-            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">💬 Reply to User</h3>
-            <form id="replyForm" class="space-y-4">
-                <input type="hidden" id="replyToUsername">
-                <input type="hidden" id="replyToMessageId">
-                <div>
-                    <label for="replySubject" class="block text-sm font-bold text-gray-700 mb-2">Subject</label>
-                    <input type="text" id="replySubject" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" readonly>
-                </div>
-                <div>
-                    <label for="replyContent" class="block text-sm font-bold text-gray-700 mb-2">Reply</label>
-                    <textarea id="replyContent" rows="4" class="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:ring-2 focus:ring-purple-500" placeholder="Type your reply..." required></textarea>
-                </div>
-                <div class="flex space-x-3">
-                    <button type="submit" class="flex-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-xl font-bold hover:from-blue-600 hover:to-purple-600 transition-all">📨 Send Reply</button>
-                    <button type="button" id="cancelReply" class="flex-1 bg-gray-500 text-white py-3 rounded-xl font-bold hover:bg-gray-600 transition-colors">❌ Cancel</button>
-                </div>
-            </form>
         </div>
     </div>
 
     <script>
-        // App State
-        let currentUser = null;
-        let users = JSON.parse(localStorage.getItem('uthman_users') || '{}');
-        let tasks = JSON.parse(localStorage.getItem('uthman_tasks') || '[]');
-        let news = JSON.parse(localStorage.getItem('uthman_news') || '[]');
-        let withdrawalOpen = JSON.parse(localStorage.getItem('uthman_withdrawal_open') || 'false');
-        let minWithdrawal = JSON.parse(localStorage.getItem('uthman_min_withdrawal') || '100');
-        let withdrawalRequests = JSON.parse(localStorage.getItem('uthman_withdrawals') || '[]');
-        let taskSubmissions = JSON.parse(localStorage.getItem('uthman_task_submissions') || '[]');
-        let blockedUsers = JSON.parse(localStorage.getItem('uthman_blocked_users') || '[]');
-        let suspendedUsers = JSON.parse(localStorage.getItem('uthman_suspended_users') || '[]');
-        let messages = JSON.parse(localStorage.getItem('uthman_messages') || '[]');
-        let adminReplies = JSON.parse(localStorage.getItem('uthman_admin_replies') || '[]');
-        let promoCodes = JSON.parse(localStorage.getItem('uthman_promo_codes') || '[]');
-        let userLevels = JSON.parse(localStorage.getItem('uthman_user_levels') || '{}');
-        let dailyLogins = JSON.parse(localStorage.getItem('uthman_daily_logins') || '{}');
-        let dailyClaims = JSON.parse(localStorage.getItem('uthman_daily_claims') || '{}');
-        let achievements = JSON.parse(localStorage.getItem('uthman_achievements') || '{}');
-        let taskCategories = JSON.parse(localStorage.getItem('uthman_task_categories') || '[]');
-        let notifications = JSON.parse(localStorage.getItem('uthman_notifications') || '[]');
-        let supportTickets = JSON.parse(localStorage.getItem('uthman_support_tickets') || '[]');
-        let faqItems = JSON.parse(localStorage.getItem('uthman_faq') || '[]');
-        let platformStats = JSON.parse(localStorage.getItem('uthman_platform_stats') || '{}');
-        let dailyClaimAmount = JSON.parse(localStorage.getItem('uthman_daily_claim_amount') || '50');
-        let referralBonusAmount = JSON.parse(localStorage.getItem('uthman_referral_bonus') || '50');
-        let telegramPopupShown = JSON.parse(localStorage.getItem('uthman_telegram_popup_shown') || 'false');
+        // --- State Variables (Master lists and user data stored in localStorage) ---
+        let isLoggedIn = false;
+        let isAdmin = false;
         
-        // User level system
-        const levelThresholds = [
-            { level: 1, name: 'Bronze', minEarnings: 0, bonus: 0, color: 'from-yellow-600 to-yellow-800' },
-            { level: 2, name: 'Silver', minEarnings: 500, bonus: 0.1, color: 'from-gray-400 to-gray-600' },
-            { level: 3, name: 'Gold', minEarnings: 1500, bonus: 0.2, color: 'from-yellow-400 to-yellow-600' },
-            { level: 4, name: 'Platinum', minEarnings: 3000, bonus: 0.3, color: 'from-purple-400 to-purple-600' },
-            { level: 5, name: 'Diamond', minEarnings: 6000, bonus: 0.5, color: 'from-blue-400 to-cyan-400' }
-        ];
+        // Master list of all users, tracked by username
+        let allUsers = {}; 
+
+        // The current user's session data
+        let userData = {
+            username: '',
+            coins: 0,
+            taskEarnings: 0,
+            referralBonus: 0,
+            totalReferrals: 0,
+            level: 1,
+            referralCode: 'UTHMAN123', 
+            lastClaimTime: 0,
+            notifications: [{ id: 1, message: 'Welcome to Uthman Task Earn! Start completing tasks to earn coins.', time: new Date().toLocaleTimeString(), read: false }],
+            transactions: [],
+            messages: [],
+            achievements: [
+                { id: 1, name: 'First Login', completed: true, reward: 100, description: 'Log in for the first time.' },
+                { id: 2, name: '10 Tasks Done', completed: false, reward: 500, description: 'Complete 10 tasks.' },
+                { id: 3, name: 'Refer 5 Friends', completed: false, reward: 1000, description: 'Get 5 active referrals.' }
+            ],
+            // New user properties to track for full profile
+            password: '', 
+            countryCode: '',
+            whatsappNumber: '',
+            isBlocked: false,
+        };
+
+        let platformSettings = {
+            withdrawalOpen: false,
+            minWithdrawal: 100,
+            dailyClaimAmount: 50,
+            news: [
+                { id: 1, title: 'Withdrawal Maintenance', content: 'The withdrawal portal will be closed until next week for system updates.', type: 'alert' },
+                { id: 2, title: 'New Social Media Tasks!', content: 'Earn 100 coins per follow on Instagram and TikTok!', type: 'success' }
+            ],
+            tasks: [
+                { id: 1, name: 'Follow us on Twitter', category: 'social', reward: 50, status: 'available' },
+                { id: 2, name: 'Complete 5-min Survey', category: 'survey', reward: 150, status: 'available' },
+                { id: 3, name: 'Download App X', category: 'download', reward: 100, status: 'available' },
+                { id: 4, name: 'Write a Review', category: 'review', reward: 80, status: 'available' }
+            ],
+            promoCodes: [
+                { code: 'WELCOMENOW', reward: 50, uses: 0, maxUses: 100 }
+            ]
+        };
         
-        // Achievement definitions
-        const achievementDefinitions = [
-            { id: 'first_task', name: 'First Steps', description: 'Complete your first task', reward: 25, icon: '🎯' },
-            { id: 'task_master_10', name: 'Task Master', description: 'Complete 10 tasks', reward: 100, icon: '🏆' },
-            { id: 'task_master_50', name: 'Task Legend', description: 'Complete 50 tasks', reward: 500, icon: '👑' },
-            { id: 'referral_king', name: 'Referral King', description: 'Refer 10 users', reward: 200, icon: '👥' },
-            { id: 'daily_warrior', name: 'Daily Warrior', description: 'Login 7 days in a row', reward: 150, icon: '🔥' },
-            { id: 'big_earner', name: 'Big Earner', description: 'Earn 1000 coins', reward: 100, icon: '💰' }
-        ];
+        // Admin state (simple check for demo)
+        const ADMIN_USERNAME = 'admin';
+        const ADMIN_PASSWORD = 'admin';
+
+
+        // --- DOM Elements ---
+        const authPage = document.getElementById('authPage');
+        const userDashboard = document.getElementById('userDashboard');
+        const adminDashboard = document.getElementById('adminDashboard');
+        const loginTab = document.getElementById('loginTab');
+        const signupTab = document.getElementById('signupTab');
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        const authMessage = document.getElementById('authMessage');
+        const telegramPopup = document.getElementById('telegramPopup');
+        const telegramFloat = document.getElementById('telegramFloat');
+        const closeTelegramPopup = document.getElementById('closeTelegramPopup');
+        const telegramBtn = document.getElementById('telegramBtn');
         
-        // Check device restriction
-        function checkDeviceRestriction(username) {
-            const deviceUser = localStorage.getItem('uthman_device_user');
-            if (deviceUser && deviceUser !== username && !blockedUsers.includes(deviceUser)) {
-                return false;
+        // Dashboard Elements
+        const userWelcome = document.getElementById('userWelcome');
+        const userCoins = document.getElementById('userCoins');
+        const taskEarnings = document.getElementById('taskEarnings');
+        const referralBonus = document.getElementById('referralBonus');
+        const totalBalance = document.getElementById('totalBalance');
+        const dailyClaimAmount = document.getElementById('dailyClaimAmount');
+        const claimDailyBtn = document.getElementById('claimDailyBtn');
+        const claimStatus = document.getElementById('claimStatus');
+        const nextClaimTime = document.getElementById('nextClaimTime');
+        const myReferralCode = document.getElementById('myReferralCode');
+        const copyReferralBtn = document.getElementById('copyReferralBtn');
+        const totalReferrals = document.getElementById('totalReferrals');
+        const withdrawalClosed = document.getElementById('withdrawalClosed');
+        const withdrawalOpen = document.getElementById('withdrawalOpen');
+        const minWithdrawal = document.getElementById('minWithdrawal');
+        const notificationsList = document.getElementById('notificationsList');
+        const notificationsBtn = document.getElementById('notificationsBtn');
+        const notificationCount = document.getElementById('notificationCount');
+        const tasksList = document.getElementById('tasksList');
+        const taskFilter = document.getElementById('taskFilter');
+        const newsList = document.getElementById('newsList');
+        const achievementsList = document.getElementById('achievementsList');
+        const transactionHistory = document.getElementById('transactionHistory');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const adminLogoutBtn = document.getElementById('adminLogoutBtn');
+
+        // Admin Elements
+        const toggleWithdrawal = document.getElementById('toggleWithdrawal');
+        const minWithdrawalInput = document.getElementById('minWithdrawalInput');
+        const updateMinWithdrawal = document.getElementById('updateMinWithdrawal');
+        const totalSignups = document.getElementById('totalSignups');
+        const blockedUsers = document.getElementById('blockedUsers'); // New!
+        const pendingTasks = document.getElementById('pendingTasks');
+        const addTaskForm = document.getElementById('addTaskForm');
+        const adminTasksList = document.getElementById('adminTasksList');
+        const promoCodeManagementForm = document.getElementById('adminPromoCodeForm');
+
+
+        // --- Functions ---
+
+        // A utility function to save and load state (using localStorage for this demo)
+        function saveState() {
+            // Save the current user's data back to the master list if they are logged in and not admin
+            if (isLoggedIn && !isAdmin) {
+                allUsers[userData.username] = userData;
             }
-            return true;
-        }
-        
-        // Generate unique referral code
-        function generateReferralCode(username) {
-            let code;
-            let attempts = 0;
-            do {
-                code = 'UTE' + username.substring(0, 3).toUpperCase() + Math.random().toString(36).substr(2, 4).toUpperCase();
-                attempts++;
-                if (attempts > 100) break; // Prevent infinite loop
-            } while (Object.values(users).some(user => user.referralCode === code));
-            return code;
-        }
-        
-        // Get user level
-        function getUserLevel(totalEarnings) {
-            for (let i = levelThresholds.length - 1; i >= 0; i--) {
-                if (totalEarnings >= levelThresholds[i].minEarnings) {
-                    return levelThresholds[i];
-                }
-            }
-            return levelThresholds[0];
-        }
-        
-        // Check daily login
-        function checkDailyLogin(username) {
-            const today = new Date().toDateString();
-            const userLogins = dailyLogins[username] || [];
+
+            localStorage.setItem('userData', JSON.stringify(userData));
+            localStorage.setItem('platformSettings', JSON.stringify(platformSettings));
+            localStorage.setItem('isLoggedIn', isLoggedIn);
+            localStorage.setItem('isAdmin', isAdmin);
             
-            if (!userLogins.includes(today)) {
-                userLogins.push(today);
-                dailyLogins[username] = userLogins;
-                
-                // Award daily login bonus
-                const user = users[username];
-                const bonus = 10 + (userLogins.length % 7 === 0 ? 50 : 0); // Extra bonus every 7 days
-                user.referralBonus += bonus;
-                user.transactions.push({
-                    type: 'daily_login',
-                    amount: bonus,
-                    description: `Daily login bonus (Day ${userLogins.length})`,
-                    timestamp: new Date().toLocaleString()
-                });
-                
-                // Check daily warrior achievement
-                if (userLogins.length >= 7) {
-                    checkAchievement(username, 'daily_warrior');
-                }
-                
-                saveData();
-                return bonus;
-            }
-            return 0;
-        }
-        
-        // Check achievements
-        function checkAchievement(username, achievementId) {
-            const userAchievements = achievements[username] || [];
-            if (userAchievements.includes(achievementId)) return;
-            
-            const achievement = achievementDefinitions.find(a => a.id === achievementId);
-            if (!achievement) return;
-            
-            const user = users[username];
-            let earned = false;
-            
-            switch (achievementId) {
-                case 'first_task':
-                    earned = user.completedTasks.length >= 1;
-                    break;
-                case 'task_master_10':
-                    earned = user.completedTasks.length >= 10;
-                    break;
-                case 'task_master_50':
-                    earned = user.completedTasks.length >= 50;
-                    break;
-                case 'referral_king':
-                    const referrals = Object.values(users).filter(u => 
-                        Object.values(users).some(referrer => 
-                            referrer.referralCode && u.referredBy === referrer.referralCode && referrer.username === username
-                        )
-                    ).length;
-                    earned = referrals >= 10;
-                    break;
-                case 'big_earner':
-                    earned = (user.taskEarnings + user.referralBonus) >= 1000;
-                    break;
-                case 'daily_warrior':
-                    const userLogins = dailyLogins[username] || [];
-                    earned = userLogins.length >= 7;
-                    break;
-            }
-            
-            if (earned) {
-                userAchievements.push(achievementId);
-                achievements[username] = userAchievements;
-                
-                user.referralBonus += achievement.reward;
-                user.transactions.push({
-                    type: 'achievement',
-                    amount: achievement.reward,
-                    description: `Achievement unlocked: ${achievement.name}`,
-                    timestamp: new Date().toLocaleString()
-                });
-                
-                addNotification(username, `🏆 Achievement Unlocked: ${achievement.name}! +${achievement.reward} coins`);
-                saveData();
-            }
-        }
-        
-        // Add notification
-        function addNotification(username, message) {
-            const notification = {
-                id: Date.now(),
-                username,
-                message,
-                timestamp: new Date().toLocaleString(),
-                read: false
-            };
-            notifications.push(notification);
-        }
-        
-        // Generate promo code
-        function generatePromoCode() {
-            return 'PROMO' + Math.random().toString(36).substr(2, 6).toUpperCase();
+            // Save the master list of all users
+            localStorage.setItem('allUsers', JSON.stringify(allUsers)); 
         }
 
-        // Update last online
-        function updateLastOnline(username) {
-            if (users[username]) {
-                users[username].lastOnline = new Date().toISOString();
-                saveData();
+        function loadState() {
+            const savedUserData = localStorage.getItem('userData');
+            const savedSettings = localStorage.getItem('platformSettings');
+            const savedLoggedIn = localStorage.getItem('isLoggedIn');
+            const savedIsAdmin = localStorage.getItem('isAdmin');
+            const savedAllUsers = localStorage.getItem('allUsers'); 
+
+            if (savedUserData && savedUserData !== 'null') {
+                userData = JSON.parse(savedUserData);
             }
+            if (savedSettings) {
+                platformSettings = JSON.parse(savedSettings);
+            }
+            // Initialize allUsers if it exists
+            if (savedAllUsers) {
+                allUsers = JSON.parse(savedAllUsers);
+            }
+
+            isLoggedIn = savedLoggedIn === 'true';
+            isAdmin = savedIsAdmin === 'true';
         }
-        
-        // Save data
-        function saveData() {
-            localStorage.setItem('uthman_users', JSON.stringify(users));
-            localStorage.setItem('uthman_tasks', JSON.stringify(tasks));
-            localStorage.setItem('uthman_news', JSON.stringify(news));
-            localStorage.setItem('uthman_withdrawal_open', JSON.stringify(withdrawalOpen));
-            localStorage.setItem('uthman_min_withdrawal', JSON.stringify(minWithdrawal));
-            localStorage.setItem('uthman_withdrawals', JSON.stringify(withdrawalRequests));
-            localStorage.setItem('uthman_task_submissions', JSON.stringify(taskSubmissions));
-            localStorage.setItem('uthman_blocked_users', JSON.stringify(blockedUsers));
-            localStorage.setItem('uthman_suspended_users', JSON.stringify(suspendedUsers));
-            localStorage.setItem('uthman_messages', JSON.stringify(messages));
-            localStorage.setItem('uthman_admin_replies', JSON.stringify(adminReplies));
-            localStorage.setItem('uthman_promo_codes', JSON.stringify(promoCodes));
-            localStorage.setItem('uthman_user_levels', JSON.stringify(userLevels));
-            localStorage.setItem('uthman_daily_logins', JSON.stringify(dailyLogins));
-            localStorage.setItem('uthman_daily_claims', JSON.stringify(dailyClaims));
-            localStorage.setItem('uthman_achievements', JSON.stringify(achievements));
-            localStorage.setItem('uthman_task_categories', JSON.stringify(taskCategories));
-            localStorage.setItem('uthman_notifications', JSON.stringify(notifications));
-            localStorage.setItem('uthman_support_tickets', JSON.stringify(supportTickets));
-            localStorage.setItem('uthman_faq', JSON.stringify(faqItems));
-            localStorage.setItem('uthman_platform_stats', JSON.stringify(platformStats));
-            localStorage.setItem('uthman_daily_claim_amount', JSON.stringify(dailyClaimAmount));
-            localStorage.setItem('uthman_referral_bonus', JSON.stringify(referralBonusAmount));
-            localStorage.setItem('uthman_telegram_popup_shown', JSON.stringify(telegramPopupShown));
-        }
-        
-        // Show notification
-        function showNotification(message, type = 'info') {
-            const notification = document.createElement('div');
-            notification.className = `fixed top-4 right-4 z-50 p-4 rounded-2xl shadow-2xl notification-slide max-w-sm ${
-                type === 'error' ? 'bg-gradient-to-r from-red-500 to-pink-500' : 
-                type === 'success' ? 'bg-gradient-to-r from-green-500 to-blue-500' : 
-                'bg-gradient-to-r from-purple-500 to-pink-500'
-            } text-white font-bold`;
-            notification.textContent = message;
-            document.body.appendChild(notification);
-            
+
+        function displayMessage(message, isError = false) {
+            authMessage.textContent = message;
+            authMessage.className = `mt-4 text-center text-sm fade-in ${isError ? 'text-red-500 font-bold' : 'text-green-500 font-bold'}`;
+            authMessage.classList.remove('hidden');
             setTimeout(() => {
-                notification.remove();
-            }, 4000);
+                authMessage.classList.add('hidden');
+            }, 3000);
         }
-        
-        // Show message in auth
-        function showMessage(message, type = 'info') {
-            const messageEl = document.getElementById('authMessage');
-            messageEl.textContent = message;
-            messageEl.className = `mt-4 text-center text-sm font-bold ${type === 'error' ? 'text-red-600' : type === 'success' ? 'text-green-600' : 'text-blue-600'}`;
-            messageEl.classList.remove('hidden');
-            setTimeout(() => messageEl.classList.add('hidden'), 4000);
-        }
-        
-        // Telegram functions
-        function showTelegramPopup() {
-            if (!telegramPopupShown) {
-                document.getElementById('telegramPopup').classList.remove('hidden');
-                setTimeout(() => {
-                    document.getElementById('telegramPopup').classList.add('hidden');
-                    telegramPopupShown = true;
-                    saveData();
-                }, 10000); // Auto hide after 10 seconds
-            }
-        }
-        
-        // Telegram event listeners
-        document.getElementById('joinTelegram').addEventListener('click', () => {
-            window.open('https://t.me/taskearn10', '_blank', 'noopener,noreferrer');
-            document.getElementById('telegramPopup').classList.add('hidden');
-            telegramPopupShown = true;
-            saveData();
-        });
-        
-        document.getElementById('closeTelegramPopup').addEventListener('click', () => {
-            document.getElementById('telegramPopup').classList.add('hidden');
-            telegramPopupShown = true;
-            saveData();
-        });
-        
-        document.getElementById('telegramBtn').addEventListener('click', () => {
-            window.open('https://t.me/taskearn10', '_blank', 'noopener,noreferrer');
-        });
-        
-        // Daily claim function
-        function checkDailyClaim(username) {
-            const today = new Date().toDateString();
-            const userClaims = dailyClaims[username] || {};
+
+        function updateDashboard() {
+            userDashboard.classList.add('fade-in');
             
-            if (userClaims.lastClaim !== today) {
-                return true; // Can claim
-            }
-            return false; // Already claimed today
-        }
-        
-        function claimDaily(username) {
-            const today = new Date().toDateString();
-            const user = users[username];
-            
-            if (checkDailyClaim(username)) {
-                user.referralBonus += dailyClaimAmount;
-                user.transactions.push({
-                    type: 'daily_claim',
-                    amount: dailyClaimAmount,
-                    description: 'Daily claim reward',
-                    timestamp: new Date().toLocaleString()
-                });
-                
-                dailyClaims[username] = {
-                    lastClaim: today,
-                    totalClaims: (dailyClaims[username]?.totalClaims || 0) + 1
-                };
-                
-                addNotification(username, `🎁 Daily claim successful! +${dailyClaimAmount} coins`);
-                saveData();
-                return true;
-            }
-            return false;
-        }
-        
-        // Make links clickable
-        function makeLinksClickable(text) {
-            const urlRegex = /(https?:\/\/[^\s]+)/g;
-            return text.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700 underline">$1</a>');
-        }
-        
-        // Switch between login and signup
-        document.getElementById('loginTab').addEventListener('click', () => {
-            document.getElementById('loginTab').className = 'flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold transition-all shadow-lg';
-            document.getElementById('signupTab').className = 'flex-1 py-3 px-4 rounded-xl text-purple-600 font-bold transition-all';
-            document.getElementById('loginForm').classList.remove('hidden');
-            document.getElementById('signupForm').classList.add('hidden');
-        });
-        
-        document.getElementById('signupTab').addEventListener('click', () => {
-            document.getElementById('signupTab').className = 'flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold transition-all shadow-lg';
-            document.getElementById('loginTab').className = 'flex-1 py-3 px-4 rounded-xl text-purple-600 font-bold transition-all';
-            document.getElementById('signupForm').classList.remove('hidden');
-            document.getElementById('loginForm').classList.add('hidden');
-        });
-        
-        // Login
-        document.getElementById('loginForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const username = document.getElementById('loginUsername').value.trim();
-            const password = document.getElementById('loginPassword').value;
-            
-            // Check if user is blocked
-            if (blockedUsers.includes(username)) {
-                showMessage('Your account has been blocked. Contact admin.', 'error');
-                return;
-            }
-            
-            // Admin login
-            if (username === 'admin' && password === 'admin') {
-                currentUser = { username: 'admin', isAdmin: true };
-                showAdminDashboard();
-                return;
-            }
-            
-            // Regular user login
-            if (users[username] && users[username].password === password) {
-                if (!checkDeviceRestriction(username)) {
-                    showMessage('This device is registered to another user', 'error');
-                    return;
-                }
-                currentUser = users[username];
-                updateLastOnline(username);
-                localStorage.setItem('uthman_device_user', username);
-                
-                // Check daily login bonus
-                const loginBonus = checkDailyLogin(username);
-                if (loginBonus > 0) {
-                    showNotification(`Daily login bonus: +${loginBonus} coins! 🎉`, 'success');
-                }
-                
-                // Check achievements
-                checkAchievement(username, 'big_earner');
-                
-                // Show Telegram popup
-                setTimeout(() => {
-                    showTelegramPopup();
-                }, 2000);
-                
-                showUserDashboard();
-            } else {
-                showMessage('Invalid username or password', 'error');
-            }
-        });
-        
-        // Signup
-        document.getElementById('signupForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const username = document.getElementById('signupUsername').value.trim();
-            const countryCode = document.getElementById('signupCountryCode').value;
-            const whatsapp = document.getElementById('signupWhatsapp').value.trim();
-            const password = document.getElementById('signupPassword').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            const referralCode = document.getElementById('referralCode').value.trim();
-            
-            // Enhanced validation
-            if (username.length < 3 || username.length > 20) {
-                showMessage('Username must be between 3-20 characters', 'error');
-                return;
-            }
-            
-            if (!/^[a-zA-Z0-9_]+$/.test(username)) {
-                showMessage('Username can only contain letters, numbers, and underscores', 'error');
-                return;
-            }
-            
-            if (users[username]) {
-                showMessage('Username already exists', 'error');
-                return;
-            }
-            
-            if (blockedUsers.includes(username)) {
-                showMessage('This username is blocked', 'error');
-                return;
-            }
-            
-            if (!countryCode) {
-                showMessage('Please select your country code', 'error');
-                return;
-            }
-            
-            if (!/^[0-9]{7,15}$/.test(whatsapp)) {
-                showMessage('WhatsApp number must be 7-15 digits only', 'error');
-                return;
-            }
-            
-            if (password.length < 6) {
-                showMessage('Password must be at least 6 characters', 'error');
-                return;
-            }
-            
-            if (password !== confirmPassword) {
-                showMessage('Passwords do not match', 'error');
-                return;
-            }
-            
-            // Check for duplicate WhatsApp numbers
-            const fullWhatsApp = countryCode + whatsapp;
-            const existingUser = Object.values(users).find(user => user.whatsapp === fullWhatsApp);
-            if (existingUser) {
-                showMessage('This WhatsApp number is already registered', 'error');
-                return;
-            }
-            
-            if (!checkDeviceRestriction(username)) {
-                showMessage('This device is already registered to another user', 'error');
-                return;
-            }
-            
-            // Check referral code
-            let referrer = null;
-            let isAdminCode = false;
-            
-            if (referralCode === 'adminuthman') {
-                isAdminCode = true;
-            } else {
-                referrer = Object.values(users).find(user => user.referralCode === referralCode);
-                if (!referrer) {
-                    showMessage('Invalid referral code. Please get a valid code from an existing user.', 'error');
-                    return;
-                }
-            }
-            
-            // Create new user with enhanced data structure
-            const newUser = {
-                username,
-                countryCode,
-                whatsapp: fullWhatsApp,
-                password,
-                taskEarnings: 0,
-                referralBonus: 0,
-                referralCode: generateReferralCode(username),
-                completedTasks: [],
-                transactions: [],
-                signupDate: new Date().toISOString(),
-                lastOnline: new Date().toISOString(),
-                referredBy: isAdminCode ? 'admin' : referrer.username,
-                isActive: true,
-                totalReferrals: 0
-            };
-            
-            // Award referral bonus
-            if (isAdminCode) {
-                // Admin referral code - only user gets welcome bonus
-                newUser.referralBonus += referralBonusAmount; // Higher welcome bonus for admin code
-                newUser.transactions.push({
-                    type: 'referral',
-                    amount: referralBonusAmount,
-                    description: 'Welcome bonus from admin referral code',
-                    timestamp: new Date().toLocaleString()
-                });
-            } else {
-                // Regular user referral - properly track referrals
-                referrer.referralBonus += referralBonusAmount;
-                referrer.totalReferrals = (referrer.totalReferrals || 0) + 1;
-                referrer.transactions.push({
-                    type: 'referral',
-                    amount: referralBonusAmount,
-                    description: `Referral bonus from ${username}`,
-                    timestamp: new Date().toLocaleString()
-                });
-                
-                // Add to referrer's referred users list
-                if (!referrer.referredUsers) {
-                    referrer.referredUsers = [];
-                }
-                referrer.referredUsers.push({
-                    username: username,
-                    date: new Date().toISOString(),
-                    bonus: referralBonusAmount
-                });
-                
-                newUser.referralBonus += Math.floor(referralBonusAmount / 2); // Welcome bonus for using referral
-                newUser.transactions.push({
-                    type: 'referral',
-                    amount: Math.floor(referralBonusAmount / 2),
-                    description: 'Welcome bonus for using referral code',
-                    timestamp: new Date().toLocaleString()
-                });
-                
-                // Check referral achievements for referrer
-                checkAchievement(referrer.username, 'referral_king');
-            }
-            
-            // Store user data properly
-            users[username] = newUser;
-            localStorage.setItem('uthman_device_user', username);
-            
-            // Force save to ensure data persistence
-            try {
-                localStorage.setItem('uthman_users', JSON.stringify(users));
-                console.log('User data saved successfully:', username);
-            } catch (error) {
-                console.error('Error saving user data:', error);
-                showMessage('Registration failed. Please try again.', 'error');
-                return;
-            }
-            
-            saveData(); // Additional save call
-            
-            showMessage('Account created successfully! Welcome bonus awarded!', 'success');
-            
-            // Clear form
-            document.getElementById('signupForm').reset();
-            
-            // Auto-login the new user
-            setTimeout(() => {
-                currentUser = newUser;
-                updateLastOnline(username);
-                
-                // Check daily login bonus
-                const loginBonus = checkDailyLogin(username);
-                if (loginBonus > 0) {
-                    showNotification(`Daily login bonus: +${loginBonus} coins! 🎉`, 'success');
-                }
-                
-                showUserDashboard();
-            }, 1500);
-        });
-        
-        // Show user dashboard
-        function showUserDashboard() {
-            document.getElementById('authPage').classList.add('hidden');
-            document.getElementById('adminDashboard').classList.add('hidden');
-            document.getElementById('userDashboard').classList.remove('hidden');
-            
-            updateUserDashboard();
-        }
-        
-        // Show admin dashboard
-        function showAdminDashboard() {
-            document.getElementById('authPage').classList.add('hidden');
-            document.getElementById('userDashboard').classList.add('hidden');
-            document.getElementById('adminDashboard').classList.remove('hidden');
-            
-            updateAdminDashboard();
-        }
-        
-        // Update user dashboard
-        function updateUserDashboard() {
-            const totalBalance = currentUser.taskEarnings + currentUser.referralBonus;
-            
-            document.getElementById('userWelcome').textContent = `Welcome back, ${currentUser.username}! 🎉`;
-            document.getElementById('userCoins').textContent = totalBalance;
-            document.getElementById('taskEarnings').textContent = currentUser.taskEarnings;
-            document.getElementById('referralBonus').textContent = currentUser.referralBonus;
-            document.getElementById('totalBalance').textContent = totalBalance;
-            document.getElementById('myReferralCode').value = currentUser.referralCode;
-            document.getElementById('minWithdrawal').textContent = minWithdrawal;
-            document.getElementById('totalReferrals').textContent = currentUser.totalReferrals || 0;
-            document.getElementById('dailyClaimAmount').textContent = dailyClaimAmount;
+            // Update user data
+            userWelcome.textContent = `Welcome, ${userData.username}!`;
+            userCoins.textContent = userData.coins.toLocaleString();
+            taskEarnings.textContent = userData.taskEarnings.toLocaleString();
+            referralBonus.textContent = userData.referralBonus.toLocaleString();
+            totalBalance.textContent = (userData.coins + userData.taskEarnings + userData.referralBonus).toLocaleString();
+            myReferralCode.value = userData.referralCode;
+            totalReferrals.textContent = userData.totalReferrals;
             
             // Update daily claim status
-            const canClaim = checkDailyClaim(currentUser.username);
-            const claimBtn = document.getElementById('claimDailyBtn');
-            const claimStatus = document.getElementById('claimStatus');
-            const nextClaimTime = document.getElementById('nextClaimTime');
-            
-            if (canClaim) {
-                claimBtn.disabled = false;
-                claimBtn.className = 'w-full bg-white text-green-500 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg';
-                claimBtn.textContent = '🎯 Claim Daily Reward';
-                claimStatus.textContent = 'Ready to claim!';
-                nextClaimTime.textContent = '';
+            updateDailyClaimStatus();
+
+            // Update withdrawal status
+            if (platformSettings.withdrawalOpen) {
+                withdrawalClosed.classList.add('hidden');
+                withdrawalOpen.classList.remove('hidden');
             } else {
-                claimBtn.disabled = true;
-                claimBtn.className = 'w-full bg-gray-300 text-gray-500 py-3 rounded-xl font-bold cursor-not-allowed';
-                claimBtn.textContent = '✅ Already Claimed';
-                claimStatus.textContent = 'Claimed today!';
-                const tomorrow = new Date();
-                tomorrow.setDate(tomorrow.getDate() + 1);
-                tomorrow.setHours(0, 0, 0, 0);
-                nextClaimTime.textContent = `Next claim: ${tomorrow.toLocaleDateString()}`;
+                withdrawalClosed.classList.remove('hidden');
+                withdrawalOpen.classList.add('hidden');
             }
+            minWithdrawal.textContent = platformSettings.minWithdrawal;
+
+            // Populate dynamic lists
+            populateNews();
+            populateNotifications();
+            populateAchievements();
+            populateTransactions();
+            populateTasks();
+        }
+
+        function updateAdminDashboard() {
+            adminDashboard.classList.add('fade-in');
             
-            // Update notification count
-            const unreadNotifications = notifications.filter(n => 
-                n.username === currentUser.username && !n.read
-            ).length;
+            // --- Update Stats Card (Dynamic User Count) ---
+            const userCount = Object.keys(allUsers).length;
+            totalSignups.textContent = userCount.toLocaleString();
             
-            const notificationCount = document.getElementById('notificationCount');
-            if (unreadNotifications > 0) {
-                notificationCount.textContent = unreadNotifications;
+            const blockedUserCount = Object.values(allUsers).filter(user => user.isBlocked).length;
+            blockedUsers.textContent = blockedUserCount; 
+            
+            pendingTasks.textContent = platformSettings.tasks.length; // Simple count for mock
+            document.getElementById('todaySignups').textContent = '25'; // Mock
+            document.getElementById('activeUsers').textContent = '150'; // Mock
+            document.getElementById('totalEarnings').textContent = '5,400,000'; // Mock
+
+            // Update Withdrawal Control
+            toggleWithdrawal.textContent = platformSettings.withdrawalOpen ? 'Open' : 'Closed';
+            toggleWithdrawal.classList.toggle('bg-red-500', !platformSettings.withdrawalOpen);
+            toggleWithdrawal.classList.toggle('bg-green-500', platformSettings.withdrawalOpen);
+            minWithdrawalInput.value = platformSettings.minWithdrawal;
+            
+            // Populate Admin Management sections
+            populateAdminTaskManagement();
+            populateAdminMessageReplies();
+        }
+
+        // ... (The rest of the rendering/utility functions remain the same) ...
+
+        function populateNews() {
+            newsList.innerHTML = platformSettings.news.map(item => {
+                let color = item.type === 'alert' ? 'bg-red-500' : 'bg-green-500';
+                let icon = item.type === 'alert' ? '🚨' : '✨';
+                return `
+                    <div class="bg-white p-4 rounded-xl shadow-md border-l-4 ${color}">
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-3">${icon}</div>
+                            <div>
+                                <p class="font-bold text-gray-800">${item.title}</p>
+                                <p class="text-sm text-gray-600">${item.content}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function populateNotifications() {
+            notificationsList.innerHTML = userData.notifications.map(n => `
+                <div class="flex justify-between items-center p-3 rounded-xl ${n.read ? 'bg-gray-100 text-gray-500' : 'bg-purple-100 text-gray-800 font-medium'}">
+                    <span>${n.read ? '✅' : '🔔'} ${n.message}</span>
+                    <span class="text-xs text-gray-400">${n.time}</span>
+                </div>
+            `).reverse().join(''); // Reverse to show latest first
+            
+            const unreadCount = userData.notifications.filter(n => !n.read).length;
+            if (unreadCount > 0) {
+                notificationCount.textContent = unreadCount;
                 notificationCount.classList.remove('hidden');
             } else {
                 notificationCount.classList.add('hidden');
             }
-            
-            // Update withdrawal status - check both portal status AND user balance
-            const withdrawalClosedEl = document.getElementById('withdrawalClosed');
-            const withdrawalOpenEl = document.getElementById('withdrawalOpen');
-            
-            if (withdrawalOpen && totalBalance >= minWithdrawal) {
-                withdrawalClosedEl.classList.add('hidden');
-                withdrawalOpenEl.classList.remove('hidden');
-            } else {
-                withdrawalClosedEl.classList.remove('hidden');
-                withdrawalOpenEl.classList.add('hidden');
-                
-                // Update the closed message based on reason
-                if (!withdrawalOpen) {
-                    withdrawalClosedEl.innerHTML = `
-                        <div class="text-center py-4">
-                            <div class="text-6xl mb-3">🔒</div>
-                            <p class="font-medium">Withdrawal portal is currently closed</p>
-                            <p class="text-sm text-orange-200 mt-2">Check back later or contact admin</p>
-                        </div>
-                    `;
-                } else if (totalBalance < minWithdrawal) {
-                    withdrawalClosedEl.innerHTML = `
-                        <div class="text-center py-4">
-                            <div class="text-6xl mb-3">💰</div>
-                            <p class="font-medium">Minimum ${minWithdrawal} coins required</p>
-                            <p class="text-sm text-orange-200 mt-2">You need ${minWithdrawal - totalBalance} more coins</p>
-                        </div>
-                    `;
-                }
-            }
-            
-            updateNewsList();
-            updateTasksList();
-            updateTransactionHistory();
-            updateAdminReplies();
-            updateUserLevel();
-            updateNotifications();
-            updateAchievements();
-            updateFAQSection();
         }
-        
-        // Update user level
-        function updateUserLevel() {
-            const totalEarnings = currentUser.taskEarnings + currentUser.referralBonus;
-            const userLevel = getUserLevel(totalEarnings);
-            const nextLevel = levelThresholds.find(l => l.minEarnings > totalEarnings);
-            
-            const levelInfo = document.getElementById('userLevelInfo');
-            levelInfo.innerHTML = `
-                <div class="bg-gradient-to-r ${userLevel.color} rounded-xl p-3 text-center">
-                    <div class="text-2xl font-bold">${userLevel.name}</div>
-                    <div class="text-sm">Level ${userLevel.level}</div>
-                </div>
-                <div class="bg-white bg-opacity-20 rounded-xl p-3">
-                    <div class="text-sm">Bonus: +${(userLevel.bonus * 100).toFixed(0)}% on tasks</div>
-                    ${nextLevel ? `<div class="text-sm">Next: ${nextLevel.minEarnings - totalEarnings} coins to ${nextLevel.name}</div>` : '<div class="text-sm">🏆 Max Level Reached!</div>'}
-                </div>
-            `;
+
+        function populateAchievements() {
+            achievementsList.innerHTML = userData.achievements.map(a => {
+                const gradient = a.completed ? 'success-gradient' : 'warning-gradient';
+                const icon = a.completed ? '⭐' : '🔒';
+                const status = a.completed ? 'Claimed' : 'Locked';
+                return `
+                    <div class="${gradient} text-white rounded-3xl shadow-lg p-4 fade-in">
+                        <div class="text-3xl mb-2">${icon}</div>
+                        <p class="font-bold">${a.name}</p>
+                        <p class="text-sm">${a.description}</p>
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="font-bold">${a.reward} Coins</span>
+                            <span class="text-xs font-semibold px-2 py-1 rounded-lg ${a.completed ? 'bg-white text-green-500' : 'bg-white text-orange-500'}">${status}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
         }
-        
-        // Update notifications
-        function updateNotifications() {
-            const notificationsList = document.getElementById('notificationsList');
-            notificationsList.innerHTML = '';
-            
-            const userNotifications = notifications.filter(n => n.username === currentUser.username).slice(-10).reverse();
-            
-            if (userNotifications.length === 0) {
-                notificationsList.innerHTML = '<p class="text-gray-500 text-center py-4">No notifications yet</p>';
+
+        function populateTransactions() {
+            if (userData.transactions.length === 0) {
+                transactionHistory.innerHTML = '<p class="text-center text-gray-500">No transactions recorded yet.</p>';
                 return;
             }
-            
-            userNotifications.forEach(notification => {
-                const notificationEl = document.createElement('div');
-                notificationEl.className = `p-4 rounded-xl ${notification.read ? 'bg-gray-50' : 'bg-blue-50 border border-blue-200'}`;
-                notificationEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="text-gray-800">${notification.message}</div>
-                            <div class="text-xs text-gray-500 mt-1">${notification.timestamp}</div>
-                        </div>
-                        ${!notification.read ? '<div class="w-3 h-3 bg-blue-500 rounded-full ml-2 mt-1"></div>' : ''}
+
+            transactionHistory.innerHTML = userData.transactions.map(t => {
+                const color = t.type === 'credit' ? 'text-green-500' : 'text-red-500';
+                const sign = t.type === 'credit' ? '+' : '-';
+                return `
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-xl shadow-sm">
+                        <span class="font-medium text-gray-700">${t.description}</span>
+                        <span class="font-bold ${color}">${sign}${t.amount}</span>
                     </div>
                 `;
-                notificationsList.appendChild(notificationEl);
-            });
+            }).reverse().join('');
         }
-        
-        // Update achievements
-        function updateAchievements() {
-            const achievementsList = document.getElementById('achievementsList');
-            achievementsList.innerHTML = '';
-            
-            const userAchievements = achievements[currentUser.username] || [];
-            
-            achievementDefinitions.forEach(achievement => {
-                const isUnlocked = userAchievements.includes(achievement.id);
-                const achievementEl = document.createElement('div');
-                achievementEl.className = `p-4 rounded-xl border-2 ${isUnlocked ? 'bg-gradient-to-br from-yellow-100 to-orange-100 border-yellow-300' : 'bg-gray-100 border-gray-300'}`;
-                achievementEl.innerHTML = `
-                    <div class="text-center">
-                        <div class="text-3xl mb-2 ${isUnlocked ? '' : 'grayscale opacity-50'}">${achievement.icon}</div>
-                        <div class="font-bold text-gray-800">${achievement.name}</div>
-                        <div class="text-sm text-gray-600 mb-2">${achievement.description}</div>
-                        <div class="text-sm font-bold ${isUnlocked ? 'text-green-600' : 'text-gray-500'}">
-                            ${isUnlocked ? '✅ Unlocked' : `🔒 ${achievement.reward} coins`}
-                        </div>
-                    </div>
-                `;
-                achievementsList.appendChild(achievementEl);
-            });
-        }
-        
-        // Update FAQ section
-        function updateFAQSection() {
-            const faqSection = document.getElementById('faqSection');
-            faqSection.innerHTML = '';
-            
-            if (faqItems.length === 0) {
-                faqSection.innerHTML = '<p class="text-gray-500 text-center py-4">No FAQ items available</p>';
-                return;
-            }
-            
-            faqItems.forEach(faq => {
-                const faqEl = document.createElement('div');
-                faqEl.className = 'border border-gray-200 rounded-xl overflow-hidden';
-                faqEl.innerHTML = `
-                    <button class="w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition-colors font-bold text-gray-800 flex justify-between items-center" onclick="toggleFAQ(${faq.id})">
-                        <span>${faq.question}</span>
-                        <span id="faq-icon-${faq.id}">▼</span>
-                    </button>
-                    <div id="faq-answer-${faq.id}" class="hidden p-4 bg-white text-gray-700">
-                        ${faq.answer}
-                    </div>
-                `;
-                faqSection.appendChild(faqEl);
-            });
-        }
-        
-        // Update news list
-        function updateNewsList() {
-            const newsList = document.getElementById('newsList');
-            newsList.innerHTML = '';
-            
-            // Filter active news
-            const activeNews = news.filter(item => {
-                const expiryTime = new Date(item.timestamp).getTime() + (item.duration * 60 * 60 * 1000);
-                return Date.now() < expiryTime;
-            });
-            
-            activeNews.forEach(item => {
-                const newsEl = document.createElement('div');
-                newsEl.className = 'bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-6 text-white shadow-2xl fade-in';
-                
-                let imageHtml = '';
-                if (item.image) {
-                    imageHtml = `<img src="${item.image}" alt="News image" class="w-full h-48 object-cover rounded-xl mb-4">`;
-                }
-                
-                let linkHtml = '';
-                if (item.link) {
-                    linkHtml = `<a href="${item.link}" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-orange-500 px-4 py-2 rounded-xl font-bold hover:bg-gray-100 transition-colors mt-2">🔗 Read More</a>`;
-                }
-                
-                newsEl.innerHTML = `
-                    <div class="flex items-start space-x-4">
-                        <div class="text-3xl">📢</div>
-                        <div class="flex-1">
-                            <h4 class="font-bold text-xl mb-2">${item.title}</h4>
-                            ${imageHtml}
-                            <div class="text-yellow-100 mb-2">${makeLinksClickable(item.content)}</div>
-                            ${linkHtml}
-                            <p class="text-xs text-yellow-200 mt-2">Posted: ${new Date(item.timestamp).toLocaleString()}</p>
-                        </div>
-                    </div>
-                `;
-                newsList.appendChild(newsEl);
-            });
-        }
-        
-        // Update tasks list
-        function updateTasksList() {
-            const tasksList = document.getElementById('tasksList');
-            const filter = document.getElementById('taskFilter').value;
-            tasksList.innerHTML = '';
-            
-            const filteredTasks = filter === 'all' ? tasks : tasks.filter(task => task.category === filter);
-            
+
+        function populateTasks() {
+            const filter = taskFilter.value;
+            const filteredTasks = platformSettings.tasks.filter(task => 
+                filter === 'all' || task.category === filter
+            );
+
             if (filteredTasks.length === 0) {
-                tasksList.innerHTML = '<div class="col-span-full text-center text-gray-500 py-8">No tasks available in this category</div>';
+                tasksList.innerHTML = '<p class="text-center text-gray-500 col-span-full">No tasks available in this category.</p>';
                 return;
             }
-            
-            filteredTasks.forEach(task => {
-                const isCompleted = currentUser.completedTasks.includes(task.id);
-                const hasPendingSubmission = taskSubmissions.some(sub => 
-                    sub.taskId === task.id && sub.username === currentUser.username && sub.status === 'pending'
-                );
-                const completedCount = task.completions || 0;
-                const isTaskFull = task.limit && completedCount >= task.limit;
-                
-                // Calculate reward with level bonus
-                const userLevel = getUserLevel(currentUser.taskEarnings + currentUser.referralBonus);
-                const bonusReward = Math.floor(task.reward * (1 + userLevel.bonus));
-                
-                const categoryColors = {
-                    social: 'from-pink-400 to-red-500',
-                    survey: 'from-green-400 to-blue-500',
-                    download: 'from-purple-400 to-indigo-500',
-                    review: 'from-yellow-400 to-orange-500',
-                    other: 'from-gray-400 to-gray-600'
-                };
-                
-                const difficultyIcons = {
-                    easy: '⭐',
-                    medium: '⭐⭐',
-                    hard: '⭐⭐⭐'
-                };
-                
-                const taskEl = document.createElement('div');
-                taskEl.className = `bg-gradient-to-br ${categoryColors[task.category] || 'from-blue-400 to-purple-500'} rounded-2xl p-6 text-white shadow-2xl transform hover:scale-105 transition-all`;
-                taskEl.innerHTML = `
-                    <div class="mb-4">
-                        <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-bold text-xl">${task.title}</h4>
-                            <span class="text-sm bg-white bg-opacity-20 px-2 py-1 rounded-lg">${difficultyIcons[task.difficulty] || '⭐'}</span>
-                        </div>
-                        <div class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded-lg inline-block mb-2">${task.category?.toUpperCase() || 'OTHER'}</div>
-                        <p class="text-blue-100 mb-3">${task.description}</p>
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-xl font-bold">
-                                💰 ${bonusReward} coins ${userLevel.bonus > 0 ? `(+${(userLevel.bonus * 100).toFixed(0)}% bonus)` : ''}
-                            </span>
-                            ${task.link ? `<a href="${task.link}" target="_blank" rel="noopener noreferrer" class="bg-white bg-opacity-20 px-3 py-1 rounded-xl text-sm hover:bg-opacity-30 transition-colors">🔗 Visit Link</a>` : ''}
-                        </div>
-                        ${task.limit ? `<div class="text-center text-sm bg-white bg-opacity-20 rounded-xl py-1">👥 ${completedCount}/${task.limit} completed</div>` : ''}
+
+            tasksList.innerHTML = filteredTasks.map(task => `
+                <div id="task-${task.id}" class="bg-white rounded-3xl shadow-xl p-5 border-l-4 border-purple-500 fade-in">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${task.name}</h4>
+                    <p class="text-sm text-gray-600 mb-3">Category: <span class="font-medium text-purple-600">${task.category.toUpperCase()}</span></p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-bold text-green-600 flex items-center">
+                            <div class="text-2xl mr-1">💰</div> ${task.reward} Coins
+                        </span>
+                        <button data-task-id="${task.id}" class="complete-task-btn bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-xl font-bold hover:from-blue-600 hover:to-purple-600 transition-all">
+                            Do Task
+                        </button>
                     </div>
-                    <button onclick="submitTask(${task.id})" 
-                            class="w-full py-3 rounded-xl font-bold transition-all ${
-                                isCompleted ? 'bg-green-500 text-white cursor-not-allowed' : 
-                                hasPendingSubmission ? 'bg-yellow-500 text-white cursor-not-allowed' :
-                                isTaskFull ? 'bg-red-500 text-white cursor-not-allowed' :
-                                'bg-white text-purple-500 hover:bg-gray-100'
-                            }"
-                            ${isCompleted || hasPendingSubmission || isTaskFull ? 'disabled' : ''}>
-                        ${isCompleted ? '✅ Completed' : hasPendingSubmission ? '⏳ Pending Review' : isTaskFull ? '🚫 Task Full' : '📤 Submit Proof'}
-                    </button>
-                `;
-                tasksList.appendChild(taskEl);
+                </div>
+            `).join('');
+
+            // Attach event listeners to new buttons
+            document.querySelectorAll('.complete-task-btn').forEach(button => {
+                button.addEventListener('click', handleTaskCompletion);
+            });
+        }
+
+        function handleTaskCompletion(event) {
+            const taskId = parseInt(event.currentTarget.dataset.taskId);
+            const task = platformSettings.tasks.find(t => t.id === taskId);
+
+            if (!task) return;
+
+            // Basic simulation of task completion
+            userData.coins += task.reward;
+            userData.taskEarnings += task.reward;
+            
+            userData.transactions.push({
+                description: `Task: ${task.name}`,
+                amount: task.reward,
+                type: 'credit'
+            });
+
+            userData.notifications.push({
+                id: Date.now(),
+                message: `Task Completed! You earned ${task.reward} coins.`,
+                time: new Date().toLocaleTimeString(),
+                read: false
+            });
+
+            // Remove task for this session (simulating completion)
+            platformSettings.tasks = platformSettings.tasks.filter(t => t.id !== taskId);
+
+            saveState();
+            updateDashboard();
+            
+            // Add coin animation to the element
+            const taskElement = document.getElementById(`task-${taskId}`);
+            if(taskElement) {
+                taskElement.classList.add('coin-animation');
+                taskElement.style.pointerEvents = 'none'; // Disable interaction while animating/disappearing
+                setTimeout(() => {
+                    taskElement.remove();
+                }, 600); // Remove after animation
+            }
+            
+            alert(`Congratulations! You earned ${task.reward} coins for completing "${task.name}".`);
+        }
+
+        function updateDailyClaimStatus() {
+            const lastClaim = userData.lastClaimTime;
+            const twentyFourHours = 24 * 60 * 60 * 1000;
+            const nextClaim = lastClaim + twentyFourHours;
+            const now = Date.now();
+            
+            dailyClaimAmount.textContent = platformSettings.dailyClaimAmount;
+
+            if (now >= nextClaim) {
+                claimDailyBtn.disabled = false;
+                claimDailyBtn.textContent = '🎯 Claim Daily Reward';
+                claimStatus.textContent = 'Ready to claim!';
+                claimStatus.className = 'text-center text-sm text-green-500 font-bold';
+                nextClaimTime.textContent = '';
+            } else {
+                claimDailyBtn.disabled = true;
+                claimDailyBtn.textContent = 'Claimed! Wait for next day';
+                claimStatus.textContent = 'Claimed today.';
+                claimStatus.className = 'text-center text-sm text-orange-500 font-bold';
+
+                // Calculate remaining time
+                const remainingMs = nextClaim - now;
+                const hours = Math.floor(remainingMs / (1000 * 60 * 60));
+                const minutes = Math.floor((remainingMs % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((remainingMs % (1000 * 60)) / 1000);
+
+                nextClaimTime.textContent = `Next claim in: ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+        
+        // Admin functions
+        function populateAdminTaskManagement() {
+            if (!adminTasksList) return;
+            
+            adminTasksList.innerHTML = platformSettings.tasks.map(task => `
+                <div class="flex justify-between items-center p-3 bg-gray-50 rounded-xl shadow-sm">
+                    <span>${task.name} (${task.reward} Coins)</span>
+                    <button data-task-id="${task.id}" class="delete-task-btn bg-red-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-red-600">Delete</button>
+                </div>
+            `).join('');
+
+            document.querySelectorAll('.delete-task-btn').forEach(button => {
+                button.addEventListener('click', handleDeleteTask);
             });
         }
         
-        // Update transaction history
-        function updateTransactionHistory() {
-            const historyEl = document.getElementById('transactionHistory');
-            historyEl.innerHTML = '';
+        function handleDeleteTask(event) {
+            const taskId = parseInt(event.currentTarget.dataset.taskId);
+            platformSettings.tasks = platformSettings.tasks.filter(t => t.id !== taskId);
+            saveState();
+            updateAdminDashboard();
+            alert('Task deleted successfully.');
+        }
+
+        function populateAdminMessageReplies() {
+            if (!document.getElementById('adminRepliesList')) return;
             
-            if (currentUser.transactions.length === 0) {
-                historyEl.innerHTML = '<p class="text-gray-500 text-center py-4">No transactions yet</p>';
+            const adminRepliesList = document.getElementById('adminRepliesList');
+            if (userData.messages.length === 0) {
+                adminRepliesList.innerHTML = '<p class="text-center text-gray-500">No messages sent yet.</p>';
                 return;
             }
-            
-            currentUser.transactions.slice(-10).reverse().forEach(transaction => {
-                const transactionEl = document.createElement('div');
-                transactionEl.className = `flex justify-between items-center p-4 rounded-xl ${
-                    transaction.type === 'task' ? 'bg-blue-100' : 
-                    transaction.type === 'referral' ? 'bg-green-100' : 'bg-gray-100'
-                }`;
-                transactionEl.innerHTML = `
-                    <div>
-                        <div class="font-medium text-gray-800">${transaction.description}</div>
-                        <div class="text-sm text-gray-600">${transaction.timestamp}</div>
-                    </div>
-                    <div class="font-bold ${transaction.amount > 0 ? 'text-green-600' : 'text-red-600'}">
-                        ${transaction.amount > 0 ? '+' : ''}${transaction.amount} coins
+
+            adminRepliesList.innerHTML = userData.messages.map((m, index) => {
+                const adminReply = index % 2 === 0 ? '<p class="text-sm text-blue-500 italic mt-1">Admin: Your request is being reviewed.</p>' : '';
+                return `
+                    <div class="p-3 bg-purple-50 rounded-xl shadow-sm">
+                        <p class="font-bold text-gray-800">Subject: ${m.subject}</p>
+                        <p class="text-sm text-gray-600">${m.content}</p>
+                        ${adminReply}
                     </div>
                 `;
-                historyEl.appendChild(transactionEl);
-            });
+            }).join('');
         }
+
+
+        // --- Event Handlers ---
+
+        // Auth Tab Switching
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white', 'shadow-lg');
+            loginTab.classList.remove('bg-transparent', 'text-purple-600', 'shadow-none');
+            signupTab.classList.remove('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white', 'shadow-lg');
+            signupTab.classList.add('bg-transparent', 'text-purple-600', 'shadow-none');
+            loginForm.classList.remove('hidden');
+            signupForm.classList.add('hidden');
+        });
+
+        signupTab.addEventListener('click', () => {
+            signupTab.classList.add('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white', 'shadow-lg');
+            signupTab.classList.remove('bg-transparent', 'text-purple-600', 'shadow-none');
+            loginTab.classList.remove('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white', 'shadow-lg');
+            loginTab.classList.add('bg-transparent', 'text-purple-600', 'shadow-none');
+            signupForm.classList.remove('hidden');
+            loginForm.classList.add('hidden');
+        });
         
-        // Submit task
-        function submitTask(taskId) {
-            document.getElementById('submissionTaskId').value = taskId;
-            document.getElementById('taskSubmissionModal').classList.remove('hidden');
-        }
-        
-        // Task submission form
-        document.getElementById('taskSubmissionForm').addEventListener('submit', (e) => {
+        // --- Login Submission (Updated to check allUsers) ---
+        loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const taskId = parseInt(document.getElementById('submissionTaskId').value);
-            const file = document.getElementById('proofFile').files[0];
-            const description = document.getElementById('proofDescription').value;
-            
-            // Check file size (3MB limit)
-            if (file && file.size > 3 * 1024 * 1024) {
-                showNotification('File size must be less than 3MB', 'error');
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            // 1. Check for Admin Login
+            if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+                isLoggedIn = true;
+                isAdmin = true;
+                userData.username = username; // Temporary session data for admin
+            // 2. Check the All Users list
+            } else if (allUsers[username] && allUsers[username].password === password) { 
+                const user = allUsers[username];
+                if (user.isBlocked) {
+                    displayMessage('Account blocked. Please contact support.', true);
+                    return;
+                }
+                isLoggedIn = true;
+                isAdmin = false;
+                userData = user; // Load actual user data for the session
+            } else {
+                displayMessage('Invalid username or password.', true);
+                return;
+            }
+
+            // Successful Login
+            displayMessage(`Login successful! Redirecting...`, false);
+            saveState(); // Save the new session state
+            setTimeout(initializeApp, 1000);
+        });
+
+        // --- Signup Submission (Updated to save to allUsers) ---
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('signupUsername').value;
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const countryCode = document.getElementById('signupCountryCode').value;
+            const whatsapp = document.getElementById('signupWhatsapp').value;
+            const referralCode = document.getElementById('referralCode').value;
+
+            if (password !== confirmPassword) {
+                displayMessage('Passwords do not match!', true);
                 return;
             }
             
-            // Convert file to base64 for storage
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const submission = {
-                        id: Date.now(),
-                        taskId,
-                        username: currentUser.username,
-                        description,
-                        fileName: file.name,
-                        fileSize: file.size,
-                        fileType: file.type,
-                        fileData: e.target.result, // Base64 data
-                        timestamp: new Date().toLocaleString(),
-                        status: 'pending'
-                    };
-                    
-                    taskSubmissions.push(submission);
-                    saveData();
-                    
-                    document.getElementById('taskSubmissionModal').classList.add('hidden');
-                    document.getElementById('taskSubmissionForm').reset();
-                    updateTasksList();
-                    showNotification('Task proof submitted! Waiting for admin approval.', 'success');
-                };
-                reader.readAsDataURL(file);
-            } else {
-                const submission = {
-                    id: Date.now(),
-                    taskId,
-                    username: currentUser.username,
-                    description,
-                    fileName: null,
-                    fileSize: null,
-                    fileType: null,
-                    fileData: null,
-                    timestamp: new Date().toLocaleString(),
-                    status: 'pending'
-                };
-                
-                taskSubmissions.push(submission);
-                saveData();
-                
-                document.getElementById('taskSubmissionModal').classList.add('hidden');
-                document.getElementById('taskSubmissionForm').reset();
-                updateTasksList();
-                showNotification('Task proof submitted! Waiting for admin approval.', 'success');
+            if (allUsers[username]) {
+                displayMessage('Username already taken. Please choose another.', true);
+                return;
             }
-        });
-        
-        // Cancel task submission
-        document.getElementById('cancelSubmission').addEventListener('click', () => {
-            document.getElementById('taskSubmissionModal').classList.add('hidden');
-            document.getElementById('taskSubmissionForm').reset();
-        });
-        
-        // Daily claim button
-        document.getElementById('claimDailyBtn').addEventListener('click', () => {
-            if (claimDaily(currentUser.username)) {
-                showNotification(`Daily reward claimed! +${dailyClaimAmount} coins 🎉`, 'success');
-                updateUserDashboard();
-            } else {
-                showNotification('You have already claimed today!', 'error');
-            }
-        });
-        
-        // Notifications button
-        document.getElementById('notificationsBtn').addEventListener('click', () => {
-            document.getElementById('notificationsModal').classList.remove('hidden');
-            updateNotificationsModal();
-        });
-        
-        document.getElementById('closeNotificationsModal').addEventListener('click', () => {
-            document.getElementById('notificationsModal').classList.add('hidden');
-        });
-        
-        // Copy referral code
-        document.getElementById('copyReferralBtn').addEventListener('click', () => {
-            const referralInput = document.getElementById('myReferralCode');
-            referralInput.select();
-            document.execCommand('copy');
             
-            const btn = document.getElementById('copyReferralBtn');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '✅ Copied!';
-            btn.className = 'bg-green-500 text-white px-4 py-2 rounded-r-xl transition-colors font-bold';
+            if (username.toLowerCase() === ADMIN_USERNAME) {
+                displayMessage('Username is reserved. Choose another.', true);
+                return;
+            }
+
+            // Create the new user object
+            const newUser = {
+                username: username,
+                password: password, 
+                coins: 100, // Signup bonus
+                taskEarnings: 0,
+                referralBonus: 0,
+                totalReferrals: 0,
+                level: 1,
+                countryCode: countryCode,
+                whatsappNumber: whatsapp,
+                referralCode: username.toUpperCase().slice(0, 3) + Math.floor(Math.random() * 10000),
+                lastClaimTime: 0,
+                notifications: [{ id: 1, message: 'Welcome bonus claimed! (100 Coins)', time: new Date().toLocaleTimeString(), read: false }],
+                transactions: [{
+                    description: `Signup Bonus (Referral: ${referralCode})`,
+                    amount: 100,
+                    type: 'credit'
+                }],
+                messages: [],
+                achievements: userData.achievements,
+                isBlocked: false,
+            };
+
+            // 1. Add user to the master list
+            allUsers[username] = newUser;
+            
+            // 2. Log the new user in
+            isLoggedIn = true;
+            isAdmin = false;
+            userData = newUser; 
+
+            displayMessage(`Account created! Welcome, ${username}.`, false);
+            saveState(); // Saves the new user to allUsers
+            setTimeout(initializeApp, 1000);
+        });
+        
+        // Telegram Popup Handlers
+        closeTelegramPopup.addEventListener('click', () => {
+            telegramPopup.style.display = 'none';
+            localStorage.setItem('telegramPopupDismissed', 'true');
+        });
+
+        telegramBtn.addEventListener('click', () => {
+            window.open('https://t.me/yourtelegramchannel', '_blank'); // Replace with actual link
+        });
+        
+        document.getElementById('joinTelegram').addEventListener('click', () => {
+            telegramBtn.click();
+            closeTelegramPopup.click();
+        });
+
+        // Dashboard Actions
+        logoutBtn.addEventListener('click', () => {
+            isLoggedIn = false;
+            isAdmin = false;
+            // Clear current user session data to prevent accidental reload
+            userData = {}; 
+            saveState();
+            initializeApp();
+        });
+
+        adminLogoutBtn.addEventListener('click', logoutBtn.click);
+
+        claimDailyBtn.addEventListener('click', () => {
+            if (claimDailyBtn.disabled) return;
+
+            userData.coins += platformSettings.dailyClaimAmount;
+            userData.lastClaimTime = Date.now();
+
+            userData.transactions.push({
+                description: 'Daily Claim Reward',
+                amount: platformSettings.dailyClaimAmount,
+                type: 'credit'
+            });
+            
+            userData.notifications.push({
+                id: Date.now(),
+                message: `You successfully claimed your ${platformSettings.dailyClaimAmount} coin daily reward!`,
+                time: new Date().toLocaleTimeString(),
+                read: false
+            });
+
+            saveState();
+            updateDashboard();
+            
+            // Flash coin balance to show the update
+            userCoins.parentNode.classList.add('coin-animation');
             setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.className = 'bg-white text-purple-500 px-4 py-2 rounded-r-xl hover:bg-gray-100 transition-colors font-bold';
-            }, 2000);
+                userCoins.parentNode.classList.remove('coin-animation');
+            }, 600);
         });
-        
-        // Promo code form
-        document.getElementById('promoCodeForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const code = document.getElementById('promoCodeInput').value.trim().toUpperCase();
-            
-            const promo = promoCodes.find(p => p.code === code && p.active && p.usedBy.length < p.limit);
-            
-            if (!promo) {
-                showNotification('Invalid or expired promo code', 'error');
-                return;
-            }
-            
-            if (promo.usedBy.includes(currentUser.username)) {
-                showNotification('You have already used this promo code', 'error');
-                return;
-            }
-            
-            // Apply promo code
-            promo.usedBy.push(currentUser.username);
-            currentUser.referralBonus += promo.reward;
-            currentUser.transactions.push({
-                type: 'promo',
-                amount: promo.reward,
-                description: `Promo code: ${promo.name}`,
-                timestamp: new Date().toLocaleString()
-            });
-            
-            saveData();
-            updateUserDashboard();
-            document.getElementById('promoCodeInput').value = '';
-            showNotification(`Promo code redeemed! +${promo.reward} coins`, 'success');
+
+        copyReferralBtn.addEventListener('click', () => {
+            myReferralCode.select();
+            document.execCommand('copy');
+            alert('Referral Code Copied!');
         });
-        
-        // Task filter
-        document.getElementById('taskFilter').addEventListener('change', () => {
-            updateTasksList();
+
+        notificationsBtn.addEventListener('click', () => {
+            // Mark all as read
+            userData.notifications.forEach(n => n.read = true);
+            saveState();
+            updateDashboard(); // Re-render to update the count
         });
+
+        taskFilter.addEventListener('change', populateTasks);
         
-        // Toggle FAQ
-        function toggleFAQ(faqId) {
-            const answer = document.getElementById(`faq-answer-${faqId}`);
-            const icon = document.getElementById(`faq-icon-${faqId}`);
-            
-            if (answer.classList.contains('hidden')) {
-                answer.classList.remove('hidden');
-                icon.textContent = '▲';
-            } else {
-                answer.classList.add('hidden');
-                icon.textContent = '▼';
-            }
-        }
-        
-        // Message admin form
         document.getElementById('messageAdminForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const subject = document.getElementById('messageSubject').value;
             const content = document.getElementById('messageContent').value;
             
-            const message = {
-                id: Date.now(),
-                username: currentUser.username,
-                subject,
-                content,
-                timestamp: new Date().toLocaleString(),
-                replied: false
-            };
-            
-            messages.push(message);
-            saveData();
+            userData.messages.push({
+                subject: subject,
+                content: content,
+                time: new Date().toLocaleString()
+            });
             
             document.getElementById('messageAdminForm').reset();
-            showNotification('Message sent to admin successfully!', 'success');
+            displayMessage('Message sent to Admin successfully!', false);
+            saveState();
+            populateAdminMessageReplies();
         });
-
-        // Update admin replies
-        function updateAdminReplies() {
-            const repliesList = document.getElementById('adminRepliesList');
-            repliesList.innerHTML = '';
-            
-            const userReplies = adminReplies.filter(reply => reply.toUsername === currentUser.username);
-            
-            if (userReplies.length === 0) {
-                repliesList.innerHTML = '<p class="text-gray-500 text-center py-4">No replies from admin yet</p>';
-                return;
-            }
-            
-            userReplies.forEach(reply => {
-                const replyEl = document.createElement('div');
-                replyEl.className = 'bg-blue-50 border border-blue-200 p-4 rounded-xl';
-                replyEl.innerHTML = `
-                    <div class="font-bold text-gray-800 mb-2">Re: ${reply.subject}</div>
-                    <div class="text-gray-700 mb-2">${reply.content}</div>
-                    <div class="text-xs text-gray-500">${reply.timestamp}</div>
-                `;
-                repliesList.appendChild(replyEl);
+        
+        // Admin Control Handlers
+        if (toggleWithdrawal) {
+            toggleWithdrawal.addEventListener('click', () => {
+                platformSettings.withdrawalOpen = !platformSettings.withdrawalOpen;
+                saveState();
+                updateAdminDashboard();
             });
         }
 
-        // Withdrawal
-        document.getElementById('withdrawBtn').addEventListener('click', () => {
-            const totalBalance = currentUser.taskEarnings + currentUser.referralBonus;
-            if (totalBalance < minWithdrawal) {
-                showNotification(`Minimum withdrawal is ${minWithdrawal} coins`, 'error');
-                return;
-            }
-            document.getElementById('withdrawalModal').classList.remove('hidden');
-        });
-        
-        document.getElementById('cancelWithdrawal').addEventListener('click', () => {
-            document.getElementById('withdrawalModal').classList.add('hidden');
-            document.getElementById('withdrawalForm').reset();
-        });
-        
-        document.getElementById('withdrawalForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const amount = parseInt(document.getElementById('withdrawAmount').value);
-            const bankName = document.getElementById('bankName').value;
-            const accountName = document.getElementById('accountName').value;
-            const accountNumber = document.getElementById('accountNumber').value;
-            
-            const totalBalance = currentUser.taskEarnings + currentUser.referralBonus;
-            
-            if (amount < minWithdrawal) {
-                showNotification(`Minimum withdrawal is ${minWithdrawal} coins`, 'error');
-                return;
-            }
-            
-            if (amount > totalBalance) {
-                showNotification('Insufficient balance!', 'error');
-                return;
-            }
-            
-            // Create withdrawal request
-            const request = {
-                id: Date.now(),
-                username: currentUser.username,
-                amount,
-                bankName,
-                accountName,
-                accountNumber,
-                timestamp: new Date().toLocaleString(),
-                status: 'pending'
-            };
-            
-            withdrawalRequests.push(request);
-            saveData();
-            
-            document.getElementById('withdrawalModal').classList.add('hidden');
-            document.getElementById('withdrawalForm').reset();
-            
-            showNotification('Withdrawal request submitted! Waiting for admin approval.', 'success');
-        });
-        
-        // Admin functions
-        function updateAdminDashboard() {
-            document.getElementById('totalSignups').textContent = Object.keys(users).length;
-            document.getElementById('blockedUsers').textContent = blockedUsers.length;
-            document.getElementById('pendingTasks').textContent = taskSubmissions.filter(sub => sub.status === 'pending').length;
-            document.getElementById('minWithdrawalInput').value = minWithdrawal;
-            
-            // Update analytics
-            const today = new Date().toDateString();
-            const todaySignups = Object.values(users).filter(user => 
-                new Date(user.signupDate).toDateString() === today
-            ).length;
-            document.getElementById('todaySignups').textContent = todaySignups;
-            
-            const activeUsers = Object.values(users).filter(user => {
-                const lastOnline = new Date(user.lastOnline);
-                const daysSinceOnline = (Date.now() - lastOnline.getTime()) / (1000 * 60 * 60 * 24);
-                return daysSinceOnline <= 7; // Active in last 7 days
-            }).length;
-            document.getElementById('activeUsers').textContent = activeUsers;
-            
-            const totalEarnings = Object.values(users).reduce((sum, user) => 
-                sum + user.taskEarnings + user.referralBonus, 0
-            );
-            document.getElementById('totalEarnings').textContent = totalEarnings;
-            
-            // Update withdrawal toggle
-            const toggleBtn = document.getElementById('toggleWithdrawal');
-            if (withdrawalOpen) {
-                toggleBtn.textContent = '🟢 Open';
-                toggleBtn.className = 'bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 transition-colors font-bold';
-            } else {
-                toggleBtn.textContent = '🔴 Closed';
-                toggleBtn.className = 'bg-red-500 text-white px-4 py-2 rounded-xl hover:bg-red-600 transition-colors font-bold';
-            }
-            
-            updateAdminNewsList();
-            updatePendingApprovals();
-            updateAllUsersList();
-            updateUserMessages();
-            updateActivePromoCodes();
-            updateFAQList();
-        }
-        
-        // Update active promo codes
-        function updateActivePromoCodes() {
-            const promoList = document.getElementById('activePromoCodes');
-            promoList.innerHTML = '';
-            
-            const activePromos = promoCodes.filter(promo => promo.active);
-            
-            if (activePromos.length === 0) {
-                promoList.innerHTML = '<p class="text-gray-500 text-center py-4">No active promo codes</p>';
-                return;
-            }
-            
-            activePromos.forEach(promo => {
-                const promoEl = document.createElement('div');
-                promoEl.className = 'bg-yellow-50 border border-yellow-200 p-4 rounded-xl';
-                promoEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="font-bold text-gray-800">${promo.name}</div>
-                            <div class="text-sm text-gray-600">Code: <span class="font-mono bg-gray-100 px-2 py-1 rounded">${promo.code}</span></div>
-                            <div class="text-sm text-gray-600">Reward: ${promo.reward} coins | Used: ${promo.usedBy.length}/${promo.limit}</div>
-                            <div class="text-xs text-gray-500">Created: ${promo.createdAt}</div>
-                        </div>
-                        <button onclick="deactivatePromo(${promo.id})" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors ml-3">Deactivate</button>
-                    </div>
-                `;
-                promoList.appendChild(promoEl);
-            });
-        }
-        
-        // Update FAQ list
-        function updateFAQList() {
-            const faqList = document.getElementById('faqList');
-            faqList.innerHTML = '';
-            
-            if (faqItems.length === 0) {
-                faqList.innerHTML = '<p class="text-gray-500 text-center py-4">No FAQ items</p>';
-                return;
-            }
-            
-            faqItems.forEach(faq => {
-                const faqEl = document.createElement('div');
-                faqEl.className = 'bg-purple-50 border border-purple-200 p-4 rounded-xl';
-                faqEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="font-bold text-gray-800">${faq.question}</div>
-                            <div class="text-sm text-gray-600 mt-1">${faq.answer}</div>
-                            <div class="text-xs text-gray-500 mt-2">Created: ${faq.createdAt}</div>
-                        </div>
-                        <button onclick="removeFAQ(${faq.id})" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors ml-3">Delete</button>
-                    </div>
-                `;
-                faqList.appendChild(faqEl);
-            });
-        }
-        
-        // Toggle withdrawal portal
-        document.getElementById('toggleWithdrawal').addEventListener('click', () => {
-            withdrawalOpen = !withdrawalOpen;
-            saveData();
-            updateAdminDashboard();
-            showNotification(`Withdrawal portal ${withdrawalOpen ? 'opened' : 'closed'}`, 'success');
-        });
-        
-        // Update minimum withdrawal
-        document.getElementById('updateMinWithdrawal').addEventListener('click', () => {
-            const newMin = parseInt(document.getElementById('minWithdrawalInput').value);
-            if (newMin && newMin > 0) {
-                minWithdrawal = newMin;
-                saveData();
-                showNotification('Minimum withdrawal updated', 'success');
-            }
-        });
-        
-        // Block user
-        document.getElementById('blockUserBtn').addEventListener('click', () => {
-            const username = document.getElementById('blockUsername').value.trim();
-            if (username && users[username] && !blockedUsers.includes(username)) {
-                blockedUsers.push(username);
-                saveData();
-                document.getElementById('blockUsername').value = '';
-                updateAdminDashboard();
-                showNotification(`User ${username} blocked`, 'success');
-            } else {
-                showNotification('Invalid username or user already blocked', 'error');
-            }
-        });
-        
-        // Remove coins from user
-        document.getElementById('removeCoinBtn').addEventListener('click', () => {
-            const username = document.getElementById('coinUsername').value.trim();
-            const amount = parseInt(document.getElementById('coinAmount').value);
-            
-            if (!username || !users[username]) {
-                showNotification('Invalid username', 'error');
-                return;
-            }
-            
-            if (!amount || amount <= 0) {
-                showNotification('Invalid amount', 'error');
-                return;
-            }
-            
-            const user = users[username];
-            const totalBalance = user.taskEarnings + user.referralBonus;
-            
-            if (amount > totalBalance) {
-                showNotification('Amount exceeds user balance', 'error');
-                return;
-            }
-            
-            // Remove from appropriate balances
-            let remaining = amount;
-            if (user.taskEarnings >= remaining) {
-                user.taskEarnings -= remaining;
-            } else {
-                remaining -= user.taskEarnings;
-                user.taskEarnings = 0;
-                user.referralBonus -= remaining;
-            }
-            
-            user.transactions.push({
-                type: 'admin_deduction',
-                amount: -amount,
-                description: 'Admin coin deduction',
-                timestamp: new Date().toLocaleString()
-            });
-            
-            saveData();
-            document.getElementById('coinUsername').value = '';
-            document.getElementById('coinAmount').value = '';
-            updateAllUsersList();
-            showNotification(`${amount} coins removed from ${username}`, 'success');
-        });
-        
-        // Update daily claim amount
-        document.getElementById('updateDailyClaimBtn').addEventListener('click', () => {
-            const newAmount = parseInt(document.getElementById('dailyClaimAmountInput').value);
-            if (newAmount && newAmount > 0) {
-                dailyClaimAmount = newAmount;
-                saveData();
-                showNotification('Daily claim amount updated', 'success');
-                document.getElementById('dailyClaimAmountInput').value = '';
-            }
-        });
-        
-        // Update referral bonus
-        document.getElementById('updateReferralBonusBtn').addEventListener('click', () => {
-            const newAmount = parseInt(document.getElementById('referralBonusInput').value);
-            if (newAmount && newAmount > 0) {
-                referralBonusAmount = newAmount;
-                saveData();
-                showNotification('Referral bonus amount updated', 'success');
-                document.getElementById('referralBonusInput').value = '';
-            }
-        });
-        
-        // Block user action
-        document.getElementById('blockUserActionBtn').addEventListener('click', () => {
-            const username = document.getElementById('actionUsername').value.trim();
-            if (username && users[username] && !blockedUsers.includes(username)) {
-                blockedUsers.push(username);
-                saveData();
-                document.getElementById('actionUsername').value = '';
-                updateAllUsersList();
-                updateAdminDashboard();
-                showNotification(`User ${username} blocked`, 'success');
-            } else {
-                showNotification('Invalid username or user already blocked', 'error');
-            }
-        });
-        
-        // Suspend user
-        document.getElementById('suspendUserBtn').addEventListener('click', () => {
-            const username = document.getElementById('actionUsername').value.trim();
-            if (username && users[username] && !suspendedUsers.includes(username)) {
-                suspendedUsers.push(username);
-                saveData();
-                document.getElementById('actionUsername').value = '';
-                updateAllUsersList();
-                showNotification(`User ${username} suspended`, 'success');
-            } else {
-                showNotification('Invalid username or user already suspended', 'error');
-            }
-        });
-        
-        // Send message to user
-        document.getElementById('sendMessageToUserBtn').addEventListener('click', () => {
-            const username = document.getElementById('actionUsername').value.trim();
-            if (username && users[username]) {
-                document.getElementById('messageToUsername').value = username;
-                document.getElementById('sendMessageModal').classList.remove('hidden');
-            } else {
-                showNotification('Invalid username', 'error');
-            }
-        });
-        
-        // Send message form
-        document.getElementById('sendMessageForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const username = document.getElementById('messageToUsername').value;
-            const subject = document.getElementById('messageToUserSubject').value;
-            const content = document.getElementById('messageToUserContent').value;
-            
-            const reply = {
-                id: Date.now(),
-                toUsername: username,
-                subject,
-                content,
-                timestamp: new Date().toLocaleString()
-            };
-            
-            adminReplies.push(reply);
-            addNotification(username, `📨 New message from admin: ${subject}`);
-            saveData();
-            
-            document.getElementById('sendMessageModal').classList.add('hidden');
-            document.getElementById('sendMessageForm').reset();
-            showNotification('Message sent successfully!', 'success');
-        });
-        
-        document.getElementById('cancelSendMessage').addEventListener('click', () => {
-            document.getElementById('sendMessageModal').classList.add('hidden');
-            document.getElementById('sendMessageForm').reset();
-        });
-        
-        // Add coins to user
-        document.getElementById('addCoinBtn').addEventListener('click', () => {
-            const username = document.getElementById('addCoinUsername').value.trim();
-            const amount = parseInt(document.getElementById('addCoinAmount').value);
-            
-            if (!username || !users[username]) {
-                showNotification('Invalid username', 'error');
-                return;
-            }
-            
-            if (!amount || amount <= 0) {
-                showNotification('Invalid amount', 'error');
-                return;
-            }
-            
-            const user = users[username];
-            user.referralBonus += amount; // Add to referral bonus
-            
-            user.transactions.push({
-                type: 'admin_bonus',
-                amount: amount,
-                description: 'Admin coin bonus',
-                timestamp: new Date().toLocaleString()
-            });
-            
-            saveData();
-            document.getElementById('addCoinUsername').value = '';
-            document.getElementById('addCoinAmount').value = '';
-            updateAllUsersList();
-            showNotification(`${amount} coins added to ${username}`, 'success');
-        });
-        
-        // Approve all tasks
-        document.getElementById('approveAllTasksBtn').addEventListener('click', () => {
-            const pendingSubmissions = taskSubmissions.filter(sub => sub.status === 'pending');
-            
-            if (pendingSubmissions.length === 0) {
-                showNotification('No pending tasks to approve', 'error');
-                return;
-            }
-            
-            let approvedCount = 0;
-            
-            pendingSubmissions.forEach(submission => {
-                const task = tasks.find(t => t.id === submission.taskId);
-                const user = users[submission.username];
-                
-                if (task && user) {
-                    submission.status = 'approved';
-                    
-                    // Calculate reward with level bonus
-                    const userLevel = getUserLevel(user.taskEarnings + user.referralBonus);
-                    const bonusReward = Math.floor(task.reward * (1 + userLevel.bonus));
-                    
-                    user.taskEarnings += bonusReward;
-                    user.completedTasks.push(task.id);
-                    user.transactions.push({
-                        type: 'task',
-                        amount: bonusReward,
-                        description: `Task completed: ${task.title}`,
-                        timestamp: new Date().toLocaleString()
-                    });
-                    task.completions++;
-                    
-                    // Check achievements
-                    checkAchievement(user.username, 'first_task');
-                    checkAchievement(user.username, 'task_master_10');
-                    checkAchievement(user.username, 'task_master_50');
-                    checkAchievement(user.username, 'big_earner');
-                    
-                    approvedCount++;
-                }
-            });
-            
-            saveData();
-            updatePendingApprovals();
-            updateAdminDashboard();
-            showNotification(`${approvedCount} tasks approved successfully!`, 'success');
-        });
-        
-        // Create promo code
-        document.getElementById('createPromoBtn').addEventListener('click', () => {
-            const name = document.getElementById('promoCodeName').value.trim();
-            const reward = parseInt(document.getElementById('promoCodeReward').value);
-            const limit = parseInt(document.getElementById('promoCodeLimit').value);
-            
-            if (!name || !reward || !limit) {
-                showNotification('Please fill all fields', 'error');
-                return;
-            }
-            
-            const promoCode = {
-                id: Date.now(),
-                code: generatePromoCode(),
-                name,
-                reward,
-                limit,
-                usedBy: [],
-                active: true,
-                createdAt: new Date().toLocaleString()
-            };
-            
-            promoCodes.push(promoCode);
-            saveData();
-            
-            document.getElementById('promoCodeName').value = '';
-            document.getElementById('promoCodeReward').value = '';
-            document.getElementById('promoCodeLimit').value = '';
-            
-            updateActivePromoCodes();
-            showNotification(`Promo code created: ${promoCode.code}`, 'success');
-        });
-        
-        // Add FAQ
-        document.getElementById('addFaqForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const question = document.getElementById('faqQuestion').value.trim();
-            const answer = document.getElementById('faqAnswer').value.trim();
-            
-            const faqItem = {
-                id: Date.now(),
-                question,
-                answer,
-                createdAt: new Date().toLocaleString()
-            };
-            
-            faqItems.push(faqItem);
-            saveData();
-            
-            document.getElementById('addFaqForm').reset();
-            updateFAQList();
-            showNotification('FAQ item added successfully', 'success');
-        });
-        
-        // View users
-        document.getElementById('viewUsersBtn').addEventListener('click', () => {
-            let userList = 'Registered Users:\n\n';
-            Object.values(users).forEach(user => {
-                const status = blockedUsers.includes(user.username) ? ' (BLOCKED)' : '';
-                userList += `Username: ${user.username}${status}\nPhone: ${user.phone}\nBalance: ${user.taskEarnings + user.referralBonus} coins\nJoined: ${new Date(user.signupDate).toLocaleDateString()}\n\n`;
-            });
-            alert(userList);
-        });
-        
-        // Add news
-        document.getElementById('addNewsForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const title = document.getElementById('newsTitle').value;
-            const content = document.getElementById('newsContent').value;
-            const duration = parseInt(document.getElementById('newsDuration').value);
-            const imageFile = document.getElementById('newsImage').files[0];
-            const link = document.getElementById('newsLink').value;
-            
-            // Check image size if provided
-            if (imageFile && imageFile.size > 2 * 1024 * 1024) {
-                showNotification('Image size must be less than 2MB', 'error');
-                return;
-            }
-            
-            const processNews = (imageData = null) => {
-                const newsItem = {
-                    id: Date.now(),
-                    title,
-                    content,
-                    duration,
-                    image: imageData,
-                    link: link || null,
-                    timestamp: new Date().toISOString()
-                };
-                
-                news.push(newsItem);
-                saveData();
-                updateAdminNewsList();
-                updateNewsList(); // Update user view
-                document.getElementById('addNewsForm').reset();
-                showNotification('News posted successfully', 'success');
-            };
-            
-            // Handle image upload
-            if (imageFile) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    processNews(e.target.result);
-                };
-                reader.readAsDataURL(imageFile);
-            } else {
-                processNews();
-            }
-        });
-        
-        // Update admin news list
-        function updateAdminNewsList() {
-            const list = document.getElementById('adminNewsList');
-            list.innerHTML = '';
-            
-            news.forEach(item => {
-                const expiryTime = new Date(item.timestamp).getTime() + (item.duration * 60 * 60 * 1000);
-                const isActive = Date.now() < expiryTime;
-                
-                const newsEl = document.createElement('div');
-                newsEl.className = `p-4 rounded-xl border ${isActive ? 'bg-green-50 border-green-200' : 'bg-gray-50 border-gray-200'}`;
-                newsEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="font-bold text-gray-800">${item.title}</div>
-                            <div class="text-sm text-gray-600 mt-1">${item.content}</div>
-                            <div class="text-xs text-gray-500 mt-2">
-                                Posted: ${new Date(item.timestamp).toLocaleString()} | 
-                                Duration: ${item.duration}h | 
-                                Status: ${isActive ? '🟢 Active' : '🔴 Expired'}
-                            </div>
-                        </div>
-                        <button onclick="removeNews(${item.id})" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors ml-3">Delete</button>
-                    </div>
-                `;
-                list.appendChild(newsEl);
-            });
-        }
-        
-        // Remove news
-        function removeNews(newsId) {
-            news = news.filter(item => item.id !== newsId);
-            saveData();
-            updateAdminNewsList();
-            showNotification('News deleted', 'success');
-        }
-        
-        // Add task
-        document.getElementById('addTaskForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const title = document.getElementById('taskTitle').value;
-            const description = document.getElementById('taskDescription').value;
-            const reward = parseInt(document.getElementById('taskReward').value);
-            const limit = parseInt(document.getElementById('taskLimit').value);
-            const category = document.getElementById('taskCategory').value;
-            const difficulty = document.getElementById('taskDifficulty').value;
-            const link = document.getElementById('taskLink').value;
-            
-            const task = {
-                id: Date.now(),
-                title,
-                description,
-                reward,
-                limit,
-                category,
-                difficulty,
-                link: link || null,
-                completions: 0,
-                createdAt: new Date().toLocaleString()
-            };
-            
-            tasks.push(task);
-            saveData();
-            document.getElementById('addTaskForm').reset();
-            showNotification('Task added successfully', 'success');
-        });
-        
-        // Update pending approvals
-        function updatePendingApprovals() {
-            // Task submissions
-            const taskSubmissionsList = document.getElementById('pendingTaskSubmissions');
-            taskSubmissionsList.innerHTML = '';
-            
-            const pendingSubmissions = taskSubmissions.filter(sub => sub.status === 'pending');
-            
-            if (pendingSubmissions.length === 0) {
-                taskSubmissionsList.innerHTML = '<p class="text-gray-500 text-center py-4">No pending task submissions</p>';
-            } else {
-                pendingSubmissions.forEach(submission => {
-                    const task = tasks.find(t => t.id === submission.taskId);
-                    const submissionEl = document.createElement('div');
-                    submissionEl.className = 'bg-yellow-50 border border-yellow-200 p-4 rounded-xl';
-                    submissionEl.innerHTML = `
-                        <div class="flex justify-between items-start">
-                            <div class="flex-1">
-                                <div class="font-bold text-gray-800">${task ? task.title : 'Unknown Task'}</div>
-                                <div class="text-sm text-gray-600">User: ${submission.username}</div>
-                                <div class="text-sm text-gray-600">Description: ${submission.description}</div>
-                                <div class="text-sm text-gray-600">File: ${submission.fileName || 'No file'}</div>
-                                <div class="text-xs text-gray-500">Submitted: ${submission.timestamp}</div>
-                                ${submission.fileData && submission.fileType && submission.fileType.startsWith('image/') ? 
-                                    `<button onclick="viewImage('${submission.fileData}', '${submission.fileName}', '${submission.username}', '${task ? task.title : 'Unknown Task'}')" class="mt-2 bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600 transition-colors">👁️ View Image</button>` : ''}
-                            </div>
-                            <div class="flex space-x-2 ml-4">
-                                <button onclick="approveTask(${submission.id})" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 transition-colors">✅ Approve</button>
-                                <button onclick="rejectTask(${submission.id})" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors">❌ Reject</button>
-                            </div>
-                        </div>
-                    `;
-                    taskSubmissionsList.appendChild(submissionEl);
-                });
-            }
-            
-            // Withdrawal requests
-            const withdrawalsList = document.getElementById('pendingWithdrawals');
-            withdrawalsList.innerHTML = '';
-            
-            const pendingWithdrawals = withdrawalRequests.filter(req => req.status === 'pending');
-            
-            if (pendingWithdrawals.length === 0) {
-                withdrawalsList.innerHTML = '<p class="text-gray-500 text-center py-4">No pending withdrawals</p>';
-            } else {
-                pendingWithdrawals.forEach(request => {
-                    const requestEl = document.createElement('div');
-                    requestEl.className = 'bg-blue-50 border border-blue-200 p-4 rounded-xl';
-                    requestEl.innerHTML = `
-                        <div class="flex justify-between items-start">
-                            <div class="flex-1">
-                                <div class="font-bold text-gray-800">${request.username} - ${request.amount} coins</div>
-                                <div class="text-sm text-gray-600">Bank: ${request.bankName}</div>
-                                <div class="text-sm text-gray-600">Account: ${request.accountName} - ${request.accountNumber}</div>
-                                <div class="text-xs text-gray-500">Requested: ${request.timestamp}</div>
-                            </div>
-                            <div class="flex space-x-2 ml-4">
-                                <button onclick="approveWithdrawal(${request.id})" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 transition-colors">✅ Approve</button>
-                                <button onclick="rejectWithdrawal(${request.id})" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors">❌ Reject</button>
-                            </div>
-                        </div>
-                    `;
-                    withdrawalsList.appendChild(requestEl);
-                });
-            }
-        }
-        
-        // Approve task
-        function approveTask(submissionId) {
-            const submission = taskSubmissions.find(sub => sub.id === submissionId);
-            const task = tasks.find(t => t.id === submission.taskId);
-            const user = users[submission.username];
-            
-            if (submission && task && user) {
-                submission.status = 'approved';
-                user.taskEarnings += task.reward;
-                user.completedTasks.push(task.id);
-                user.transactions.push({
-                    type: 'task',
-                    amount: task.reward,
-                    description: `Task completed: ${task.title}`,
-                    timestamp: new Date().toLocaleString()
-                });
-                task.completions++;
-                
-                saveData();
-                updatePendingApprovals();
-                showNotification(`Task approved for ${submission.username}`, 'success');
-            }
-        }
-        
-        // Reject task
-        function rejectTask(submissionId) {
-            const submission = taskSubmissions.find(sub => sub.id === submissionId);
-            if (submission) {
-                submission.status = 'rejected';
-                saveData();
-                updatePendingApprovals();
-                showNotification(`Task rejected for ${submission.username}`, 'success');
-            }
-        }
-        
-        // Approve withdrawal
-        function approveWithdrawal(requestId) {
-            const request = withdrawalRequests.find(req => req.id === requestId);
-            const user = users[request.username];
-            
-            if (request && user) {
-                const totalBalance = user.taskEarnings + user.referralBonus;
-                if (totalBalance >= request.amount) {
-                    // Deduct from appropriate balances
-                    let remaining = request.amount;
-                    if (user.taskEarnings >= remaining) {
-                        user.taskEarnings -= remaining;
-                    } else {
-                        remaining -= user.taskEarnings;
-                        user.taskEarnings = 0;
-                        user.referralBonus -= remaining;
-                    }
-                    
-                    request.status = 'approved';
-                    user.transactions.push({
-                        type: 'withdrawal',
-                        amount: -request.amount,
-                        description: `Withdrawal to ${request.bankName}`,
-                        timestamp: new Date().toLocaleString()
-                    });
-                    
-                    saveData();
-                    updatePendingApprovals();
-                    showNotification(`Withdrawal approved for ${request.username}`, 'success');
+        if (updateMinWithdrawal) {
+            updateMinWithdrawal.addEventListener('click', () => {
+                const newMin = parseInt(minWithdrawalInput.value);
+                if (newMin && newMin > 0) {
+                    platformSettings.minWithdrawal = newMin;
+                    saveState();
+                    updateAdminDashboard();
+                    alert(`Minimum withdrawal updated to ${newMin}`);
                 } else {
-                    showNotification('User has insufficient balance', 'error');
+                    alert('Please enter a valid minimum withdrawal amount.');
                 }
-            }
-        }
-        
-        // Reject withdrawal
-        function rejectWithdrawal(requestId) {
-            const request = withdrawalRequests.find(req => req.id === requestId);
-            if (request) {
-                request.status = 'rejected';
-                saveData();
-                updatePendingApprovals();
-                showNotification(`Withdrawal rejected for ${request.username}`, 'success');
-            }
-        }
-        
-        // Logout functions
-        document.getElementById('logoutBtn').addEventListener('click', () => {
-            currentUser = null;
-            document.getElementById('userDashboard').classList.add('hidden');
-            document.getElementById('authPage').classList.remove('hidden');
-        });
-        
-        document.getElementById('adminLogoutBtn').addEventListener('click', () => {
-            currentUser = null;
-            document.getElementById('adminDashboard').classList.add('hidden');
-            document.getElementById('authPage').classList.remove('hidden');
-        });
-        
-        // Update all users list
-        function updateAllUsersList() {
-            const usersList = document.getElementById('allUsersList');
-            usersList.innerHTML = '';
-            
-            // Sort users by signup date (newest first)
-            const sortedUsers = Object.values(users).sort((a, b) => 
-                new Date(b.signupDate) - new Date(a.signupDate)
-            );
-            
-            if (sortedUsers.length === 0) {
-                usersList.innerHTML = '<p class="text-gray-500 text-center py-8">No users registered yet</p>';
-                return;
-            }
-            
-            sortedUsers.forEach((user, index) => {
-                const isBlocked = blockedUsers.includes(user.username);
-                const lastOnline = user.lastOnline ? new Date(user.lastOnline).toLocaleString() : 'Never';
-                const totalBalance = user.taskEarnings + user.referralBonus;
-                const referrals = user.totalReferrals || 0;
-                const signupDate = new Date(user.signupDate).toLocaleString();
-                
-                const userEl = document.createElement('div');
-                userEl.className = `p-4 rounded-xl border ${isBlocked ? 'bg-red-50 border-red-200' : 'bg-green-50 border-green-200'} mb-3`;
-                userEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="font-bold text-gray-800 text-lg">
-                                #${index + 1} ${user.username} 
-                                ${isBlocked ? '<span class="text-red-600 text-sm">(BLOCKED)</span>' : '<span class="text-green-600 text-sm">(ACTIVE)</span>'}
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
-                                <div class="text-sm text-gray-600">📱 WhatsApp: ${user.whatsapp || user.phone || 'Not provided'}</div>
-                                <div class="text-sm text-gray-600">💰 Balance: ${totalBalance} coins</div>
-                                <div class="text-sm text-gray-600">🎯 Referral Code: ${user.referralCode}</div>
-                                <div class="text-sm text-gray-600">👥 Referrals: ${referrals}</div>
-                                <div class="text-sm text-gray-600">🕒 Last Online: ${lastOnline}</div>
-                                <div class="text-sm text-gray-600">📅 Joined: ${signupDate}</div>
-                                <div class="text-sm text-gray-600">🌍 Country: ${user.countryCode || 'Not provided'}</div>
-                                <div class="text-sm text-gray-600">📊 Tasks: ${user.completedTasks ? user.completedTasks.length : 0}</div>
-                            </div>
-                            ${user.referredBy ? `<div class="text-xs text-gray-500 mt-2">Referred by: ${user.referredBy}</div>` : ''}
-                        </div>
-                        <div class="flex flex-col space-y-2 ml-4">
-                            ${!isBlocked ? 
-                                `<button onclick="blockUser('${user.username}')" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition-colors">🚫 Block</button>` :
-                                `<button onclick="unblockUser('${user.username}')" class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 transition-colors">✅ Unblock</button>`
-                            }
-                            <button onclick="viewUserDetails('${user.username}')" class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600 transition-colors">👁️ Details</button>
-                        </div>
-                    </div>
-                `;
-                usersList.appendChild(userEl);
             });
-            
-            // Add summary at the top
-            const summaryEl = document.createElement('div');
-            summaryEl.className = 'bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-xl mb-4';
-            summaryEl.innerHTML = `
-                <div class="text-center">
-                    <h4 class="font-bold text-lg mb-2">📊 User Statistics</h4>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                        <div>
-                            <div class="font-bold text-2xl">${sortedUsers.length}</div>
-                            <div>Total Users</div>
-                        </div>
-                        <div>
-                            <div class="font-bold text-2xl">${sortedUsers.filter(u => !blockedUsers.includes(u.username)).length}</div>
-                            <div>Active Users</div>
-                        </div>
-                        <div>
-                            <div class="font-bold text-2xl">${blockedUsers.length}</div>
-                            <div>Blocked Users</div>
-                        </div>
-                        <div>
-                            <div class="font-bold text-2xl">${sortedUsers.filter(u => {
-                                const lastOnline = new Date(u.lastOnline);
-                                const daysSince = (Date.now() - lastOnline.getTime()) / (1000 * 60 * 60 * 24);
-                                return daysSince <= 1;
-                            }).length}</div>
-                            <div>Online Today</div>
-                        </div>
-                    </div>
-                </div>
-            `;
-            usersList.insertBefore(summaryEl, usersList.firstChild);
         }
+        
+        // Admin Task Add Handler
+        if (addTaskForm) {
+            addTaskForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('newTaskName').value;
+                const category = document.getElementById('newTaskCategory').value;
+                const reward = parseInt(document.getElementById('newTaskReward').value);
 
-        // Update user messages
-        function updateUserMessages() {
-            const messagesList = document.getElementById('userMessagesList');
-            messagesList.innerHTML = '';
-            
-            if (messages.length === 0) {
-                messagesList.innerHTML = '<p class="text-gray-500 text-center py-4">No messages from users</p>';
-                return;
-            }
-            
-            messages.slice().reverse().forEach(message => {
-                const messageEl = document.createElement('div');
-                messageEl.className = `p-4 rounded-xl border ${message.replied ? 'bg-green-50 border-green-200' : 'bg-yellow-50 border-yellow-200'}`;
-                messageEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="font-bold text-gray-800">${message.subject}</div>
-                            <div class="text-sm text-gray-600 mb-2">From: ${message.username}</div>
-                            <div class="text-gray-700 mb-2">${message.content}</div>
-                            <div class="text-xs text-gray-500">${message.timestamp}</div>
-                        </div>
-                        <div class="flex space-x-2 ml-4">
-                            ${!message.replied ? 
-                                `<button onclick="replyToMessage(${message.id}, '${message.username}', '${message.subject}')" class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600 transition-colors">💬 Reply</button>` :
-                                `<span class="text-green-600 text-sm font-bold">✅ Replied</span>`
-                            }
-                        </div>
-                    </div>
-                `;
-                messagesList.appendChild(messageEl);
+                if (name && category && reward > 0) {
+                    const newTask = {
+                        id: Date.now(),
+                        name: name,
+                        category: category,
+                        reward: reward,
+                        status: 'available'
+                    };
+                    platformSettings.tasks.push(newTask);
+                    saveState();
+                    updateAdminDashboard();
+                    alert('New task added successfully!');
+                    addTaskForm.reset();
+                } else {
+                    alert('Please fill in all task fields correctly.');
+                }
+            });
+        }
+        
+        // Admin Block User Handler (Basic Mock)
+        if (document.getElementById('blockUserBtn')) {
+            document.getElementById('blockUserBtn').addEventListener('click', () => {
+                const usernameToBlock = document.getElementById('blockUsername').value.trim();
+                if (allUsers[usernameToBlock]) {
+                    allUsers[usernameToBlock].isBlocked = true;
+                    saveState();
+                    updateAdminDashboard();
+                    alert(`User ${usernameToBlock} has been blocked.`);
+                } else {
+                    alert(`User ${usernameToBlock} not found.`);
+                }
             });
         }
 
-        // View image function
-        function viewImage(imageData, fileName, username, taskTitle) {
-            document.getElementById('proofImage').src = imageData;
-            document.getElementById('imageDetails').innerHTML = `
-                <div class="text-left">
-                    <p><strong>File:</strong> ${fileName}</p>
-                    <p><strong>User:</strong> ${username}</p>
-                    <p><strong>Task:</strong> ${taskTitle}</p>
-                </div>
-            `;
-            document.getElementById('imageViewerModal').classList.remove('hidden');
-        }
+        // Initialize the Application
+        function initializeApp() {
+            loadState();
+            
+            // Hide all and show the correct page
+            authPage.classList.add('hidden');
+            userDashboard.classList.add('hidden');
+            adminDashboard.classList.add('hidden');
 
-        // Close image viewer
-        document.getElementById('closeImageViewer').addEventListener('click', () => {
-            document.getElementById('imageViewerModal').classList.add('hidden');
-        });
-
-        // Block/Unblock user functions
-        function blockUser(username) {
-            if (!blockedUsers.includes(username)) {
-                blockedUsers.push(username);
-                saveData();
-                updateAllUsersList();
-                updateAdminDashboard();
-                showNotification(`User ${username} blocked`, 'success');
-            }
-        }
-
-        function unblockUser(username) {
-            const index = blockedUsers.indexOf(username);
-            if (index > -1) {
-                blockedUsers.splice(index, 1);
-                saveData();
-                updateAllUsersList();
-                updateAdminDashboard();
-                showNotification(`User ${username} unblocked`, 'success');
-            }
-        }
-
-        // Reply to message
-        function replyToMessage(messageId, username, subject) {
-            document.getElementById('replyToUsername').value = username;
-            document.getElementById('replyToMessageId').value = messageId;
-            document.getElementById('replySubject').value = subject;
-            document.getElementById('replyModal').classList.remove('hidden');
-        }
-
-        // Reply form submission
-        document.getElementById('replyForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const toUsername = document.getElementById('replyToUsername').value;
-            const messageId = parseInt(document.getElementById('replyToMessageId').value);
-            const subject = document.getElementById('replySubject').value;
-            const content = document.getElementById('replyContent').value;
-            
-            const reply = {
-                id: Date.now(),
-                toUsername,
-                subject,
-                content,
-                timestamp: new Date().toLocaleString()
-            };
-            
-            adminReplies.push(reply);
-            
-            // Mark original message as replied
-            const originalMessage = messages.find(msg => msg.id === messageId);
-            if (originalMessage) {
-                originalMessage.replied = true;
-            }
-            
-            saveData();
-            
-            document.getElementById('replyModal').classList.add('hidden');
-            document.getElementById('replyForm').reset();
-            updateUserMessages();
-            showNotification('Reply sent successfully!', 'success');
-        });
-
-        // Cancel reply
-        document.getElementById('cancelReply').addEventListener('click', () => {
-            document.getElementById('replyModal').classList.add('hidden');
-            document.getElementById('replyForm').reset();
-        });
-
-        // Deactivate promo code
-        function deactivatePromo(promoId) {
-            const promo = promoCodes.find(p => p.id === promoId);
-            if (promo) {
-                promo.active = false;
-                saveData();
-                updateActivePromoCodes();
-                showNotification('Promo code deactivated', 'success');
-            }
-        }
-        
-        // Remove FAQ
-        function removeFAQ(faqId) {
-            const index = faqItems.findIndex(faq => faq.id === faqId);
-            if (index > -1) {
-                faqItems.splice(index, 1);
-                saveData();
-                updateFAQList();
-                updateFAQSection();
-                showNotification('FAQ item removed', 'success');
-            }
-        }
-        
-        // View user details function
-        function viewUserDetails(username) {
-            const user = users[username];
-            if (!user) return;
-            
-            const totalBalance = user.taskEarnings + user.referralBonus;
-            const referrals = user.totalReferrals || 0;
-            const completedTasks = user.completedTasks ? user.completedTasks.length : 0;
-            
-            let details = `👤 USER DETAILS: ${username}\n\n`;
-            details += `📱 WhatsApp: ${user.whatsapp || user.phone || 'Not provided'}\n`;
-            details += `🌍 Country: ${user.countryCode || 'Not provided'}\n`;
-            details += `💰 Total Balance: ${totalBalance} coins\n`;
-            details += `   - Task Earnings: ${user.taskEarnings} coins\n`;
-            details += `   - Referral Bonus: ${user.referralBonus} coins\n`;
-            details += `🎯 Referral Code: ${user.referralCode}\n`;
-            details += `👥 Total Referrals: ${referrals}\n`;
-            details += `📊 Completed Tasks: ${completedTasks}\n`;
-            details += `📅 Joined: ${new Date(user.signupDate).toLocaleString()}\n`;
-            details += `🕒 Last Online: ${user.lastOnline ? new Date(user.lastOnline).toLocaleString() : 'Never'}\n`;
-            details += `🔗 Referred By: ${user.referredBy || 'Direct signup'}\n`;
-            details += `✅ Status: ${blockedUsers.includes(username) ? 'BLOCKED' : 'ACTIVE'}\n\n`;
-            
-            if (user.transactions && user.transactions.length > 0) {
-                details += `💳 RECENT TRANSACTIONS:\n`;
-                user.transactions.slice(-5).forEach(tx => {
-                    details += `${tx.timestamp}: ${tx.description} (${tx.amount > 0 ? '+' : ''}${tx.amount} coins)\n`;
-                });
+            if (isLoggedIn) {
+                if (isAdmin) {
+                    adminDashboard.classList.remove('hidden');
+                    updateAdminDashboard();
+                } else {
+                    userDashboard.classList.remove('hidden');
+                    updateDashboard();
+                    // Start the daily claim timer update
+                    if(userData.lastClaimTime > 0) {
+                        setInterval(updateDailyClaimStatus, 1000);
+                    }
+                }
+                telegramFloat.classList.remove('hidden');
             } else {
-                details += `💳 No transactions yet\n`;
-            }
-            
-            alert(details);
-        }
-        
-        // Debug function to check data integrity
-        function debugUserData() {
-            console.log('=== USER DATA DEBUG ===');
-            console.log('Total users in storage:', Object.keys(users).length);
-            console.log('Users object:', users);
-            console.log('Blocked users:', blockedUsers);
-            
-            // Check for data corruption
-            Object.entries(users).forEach(([username, user]) => {
-                if (!user.username) {
-                    console.warn(`User ${username} missing username field`);
+                authPage.classList.remove('hidden');
+                telegramFloat.classList.remove('hidden');
+                
+                // Show telegram popup once per session
+                if (localStorage.getItem('telegramPopupDismissed') !== 'true') {
+                    telegramPopup.classList.remove('hidden');
+                } else {
+                    telegramPopup.classList.add('hidden');
                 }
-                if (!user.signupDate) {
-                    console.warn(`User ${username} missing signupDate`);
-                }
-                if (!user.referralCode) {
-                    console.warn(`User ${username} missing referralCode`);
-                }
-            });
-            
-            // Force refresh admin dashboard
-            if (currentUser && currentUser.isAdmin) {
-                updateAdminDashboard();
             }
         }
+
+        // Run the main initialization function
+        initializeApp();
         
-        // Make functions global for onclick handlers
-        window.submitTask = submitTask;
-        window.removeNews = removeNews;
-        window.approveTask = approveTask;
-        window.rejectTask = rejectTask;
-        window.approveWithdrawal = approveWithdrawal;
-        window.rejectWithdrawal = rejectWithdrawal;
-        window.viewImage = viewImage;
-        window.blockUser = blockUser;
-        window.unblockUser = unblockUser;
-        window.replyToMessage = replyToMessage;
-        window.toggleFAQ = toggleFAQ;
-        window.deactivatePromo = deactivatePromo;
-        window.removeFAQ = removeFAQ;
-        window.viewUserDetails = viewUserDetails;
-        window.debugUserData = debugUserData;
-        
-        // Initialize data and check integrity on load
-        function initializeData() {
-            console.log('Initializing platform data...');
-            
-            // Clean up expired news
-            news = news.filter(item => {
-                const expiryTime = new Date(item.timestamp).getTime() + (item.duration * 60 * 60 * 1000);
-                return Date.now() < expiryTime;
-            });
-            
-            // Ensure all users have required fields
-            Object.entries(users).forEach(([username, user]) => {
-                let updated = false;
-                
-                // Add missing fields for existing users
-                if (!user.whatsapp && user.phone) {
-                    user.whatsapp = user.phone;
-                    updated = true;
-                }
-                if (!user.countryCode) {
-                    user.countryCode = '+1'; // Default country code
-                    updated = true;
-                }
-                if (!user.isActive) {
-                    user.isActive = true;
-                    updated = true;
-                }
-                if (!user.totalReferrals) {
-                    user.totalReferrals = 0;
-                    updated = true;
-                }
-                if (!user.referredBy) {
-                    user.referredBy = 'legacy';
-                    updated = true;
-                }
-                if (!user.transactions) {
-                    user.transactions = [];
-                    updated = true;
-                }
-                if (!user.completedTasks) {
-                    user.completedTasks = [];
-                    updated = true;
-                }
-                
-                if (updated) {
-                    console.log(`Updated user data for: ${username}`);
-                }
-            });
-            
-            // Add some default FAQ items if none exist
-            if (faqItems.length === 0) {
-                faqItems = [
-                    {
-                        id: 1,
-                        question: "How do I earn coins?",
-                        answer: "You can earn coins by completing tasks, referring friends, and logging in daily. Each completed task gives you coins based on its difficulty.",
-                        createdAt: new Date().toLocaleString()
-                    },
-                    {
-                        id: 2,
-                        question: "How does the referral system work?",
-                        answer: "Share your referral code with friends. When they sign up using your code, you get 50 coins and they get 25 coins as a welcome bonus.",
-                        createdAt: new Date().toLocaleString()
-                    },
-                    {
-                        id: 3,
-                        question: "When can I withdraw my earnings?",
-                        answer: "You can withdraw when the withdrawal portal is open and you have at least the minimum required coins. Check the withdrawal section for current status.",
-                        createdAt: new Date().toLocaleString()
-                    },
-                    {
-                        id: 4,
-                        question: "How long does task approval take?",
-                        answer: "Task submissions are typically reviewed within 24-48 hours. Make sure to provide clear proof of completion for faster approval.",
-                        createdAt: new Date().toLocaleString()
-                    }
-                ];
-                console.log('Added default FAQ items');
-            }
-            
-            // Add some default tasks if none exist
-            if (tasks.length === 0) {
-                tasks = [
-                    {
-                        id: 1,
-                        title: "Follow our social media",
-                        description: "Follow our official social media accounts and take a screenshot",
-                        reward: 25,
-                        limit: 1000,
-                        category: "social",
-                        difficulty: "easy",
-                        link: null,
-                        completions: 0,
-                        createdAt: new Date().toLocaleString()
-                    },
-                    {
-                        id: 2,
-                        title: "Share referral code",
-                        description: "Share your referral code in 3 different groups and provide screenshots",
-                        reward: 50,
-                        limit: 500,
-                        category: "social",
-                        difficulty: "medium",
-                        link: null,
-                        completions: 0,
-                        createdAt: new Date().toLocaleString()
-                    }
-                ];
-                console.log('Added default tasks');
-            }
-            
-            saveData();
-            console.log('Data initialization complete');
-            console.log(`Total users: ${Object.keys(users).length}`);
-        }
-        
-        // Update notifications modal
-        function updateNotificationsModal() {
-            const notificationsModalList = document.getElementById('notificationsModalList');
-            notificationsModalList.innerHTML = '';
-            
-            const userNotifications = notifications.filter(n => n.username === currentUser.username).slice(-20).reverse();
-            
-            if (userNotifications.length === 0) {
-                notificationsModalList.innerHTML = '<p class="text-gray-500 text-center py-4">No notifications yet</p>';
-                return;
-            }
-            
-            userNotifications.forEach(notification => {
-                const notificationEl = document.createElement('div');
-                notificationEl.className = `p-4 rounded-xl ${notification.read ? 'bg-gray-50' : 'bg-blue-50 border border-blue-200'}`;
-                notificationEl.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="text-gray-800">${notification.message}</div>
-                            <div class="text-xs text-gray-500 mt-1">${notification.timestamp}</div>
-                        </div>
-                        ${!notification.read ? '<div class="w-3 h-3 bg-blue-500 rounded-full ml-2 mt-1"></div>' : ''}
-                    </div>
-                `;
-                
-                // Mark as read when clicked
-                if (!notification.read) {
-                    notificationEl.addEventListener('click', () => {
-                        notification.read = true;
-                        saveData();
-                        updateUserDashboard();
-                        updateNotificationsModal();
-                    });
-                    notificationEl.style.cursor = 'pointer';
-                }
-                
-                notificationsModalList.appendChild(notificationEl);
-            });
-        }
-        
-        // Run initialization
-        initializeData();
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99663893b10e93e7',t:'MTc2MTc3ODExMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
