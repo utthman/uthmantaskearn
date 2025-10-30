@@ -443,10 +443,19 @@ function initializeApp() {
     }
 }
 
-// Attach all event listeners
-// NOTE: You must ensure all other DOM elements referenced above have their 
-// corresponding event listeners within your full script or the initEventHandlers function.
-initEventHandlers(); 
+// This ensures all functions only run AFTER the HTML elements (buttons, forms, etc.) 
+// are fully rendered and available in the document.
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Attach all event listeners to the now-existing DOM elements
+    initEventHandlers(); 
 
-// Run the main initialization function
-initializeApp();
+    // 2. Run the main initialization function to load state and show the correct view
+    initializeApp();
+    
+    // 3. Start the continuous check for the Daily Claim Timer
+    // The setInterval call was missing a start point, so we'll ensure it starts 
+    // immediately if the user is logged in (handled inside initializeApp)
+    if (isLoggedIn && !isAdmin && userData.lastClaimTime > 0) {
+        setInterval(updateDailyClaimStatus, 1000);
+    }
+});
